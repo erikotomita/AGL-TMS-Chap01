@@ -85,9 +85,10 @@ $HTML['pageHeaderJsCss'] = <<< HTML
 HTML;
 
 $HTML['pageFooterJs'] = <<< HTML
-<!--javascript-->
+<!--javascript
 <script type="text/javascript" src="{$pas}lib/jquery-3.4.1.min.js"></script>
 <script src="{$pas}js/common.js?{$time}"></script>
 <script src="{$pas}lib/jquery.inview.min.js"></script>
 <script src="{$pas}js/sorano.template.js?{$time}"></script>
+-->
 HTML;

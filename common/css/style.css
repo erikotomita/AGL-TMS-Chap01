@@ -425,16 +425,19 @@ button::-moz-focus-inner {
 	- base
 ========================================================
 */
-.nav {
-  display: inline-block;
-  color: #656565;
-}
-@media screen and (max-width: 680px), screen and (max-width: 737px) and (orientation: landscape) {
-  .nav {
-    display: block;
-  }
-}
-
+/*
+body{
+    @include media-query('s') {
+      background-color: yellow ;
+    }
+    @include media-query('m') {
+      background-color: green;
+    }
+    @include media-query('l') {
+      background-color: lightblue;
+    }
+ }
+ */
 /*
 ========================================================
 	- common
@@ -480,17 +483,17 @@ main {
 }
 body,
 html {
-  min-width: 1200px;
+  min-width: 992px;
   max-width: 1920px;
   margin: auto;
   font-family: "Noto Sans JP", "Oswald", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-  color: #222222;
+  color: #000000;
 }
 
 a,
 a:hover,
 a:visited {
-  color: #222222;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -515,7 +518,7 @@ ul {
   display: none !important;
 }
 
-@media screen and (max-width: 680px), screen and (max-width: 737px) and (orientation: landscape) {
+@media screen and (max-width: 576px) and (orientation: portrait) {
   body,
 html {
     min-width: 0;
