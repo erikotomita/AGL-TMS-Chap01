@@ -1,0 +1,64 @@
+/*
+========================================================
+	- p-merrit
+========================================================
+*/
+
+.p-merrit{
+  width: 100%;
+
+  padding: 69px 0px 69px 0px;
+  text-align: center;
+
+}
+
+.p-merrit__contents{
+  width: 100%;
+  margin: 0 auto;
+}
+.p-merrit__contents__box.is-right{
+  img{
+    float:right;
+    padding-right: 2vw;
+    @include media-query('s') {
+      width:  100%;
+    }
+  }
+  .p-merrit__contents__box__description{
+    text-align: left;
+    float:left;
+    width:50%;
+    padding-left: 2vw;
+    @include media-query('s') {
+      width:  100%;
+    }
+  }
+}
+.p-merrit__contents__box.is-left{
+  img{
+    float:left;
+    padding-left: 2vw;
+    @include media-query('s') {
+      width:  100%;
+    }
+  }
+  .p-merrit__contents__box__description{
+    text-align: left;
+    float:right;
+    width:50%;
+    padding-right: 2vw;
+    @include media-query('s') {
+      width:  100%;
+    }
+  }
+}
+.p-merrit__contents__box__description{
+  position: relative;
+  span{
+    position: absolute;
+    top:0;
+    left:2vw;
+  }
+
+  padding: 127px 0px 0px 90px;
+}

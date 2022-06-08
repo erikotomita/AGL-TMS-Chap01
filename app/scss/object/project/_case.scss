@@ -1,0 +1,47 @@
+/*
+========================================================
+	- p-case
+========================================================
+*/
+
+.p-case{
+  width: 100%;
+  margin: 0 auto;
+  padding: 88px 0px 69px 0px;
+  text-align: center;
+
+}
+
+$elements: 3;
+@for $i from 0 to $elements {
+  .p-case__contents__3col:nth-child(#{$i + 1}) {
+    background-image: url("../img/SVG/_0"+#{$i + 1}+".svg");
+  }
+}
+.p-case__contents{
+  width: 100%;
+  margin: 0 auto;
+  margin-top:60px;
+  @include media-query('s') {
+    width:  100%;
+  }
+}
+.p-case__contents__3col{
+  display: inline-block;
+  vertical-align:middle;
+  background-repeat: no-repeat;
+  background-size: 196px 155px;
+  width: 30%;
+  height: 306px;
+  text-align: left;
+  position: relative;
+  padding-top: 154px;
+  &:nth-child(2) {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  @include media-query('s') {
+    margin: 33px 0px 33px 25px;
+    width: 100%;
+  }
+}

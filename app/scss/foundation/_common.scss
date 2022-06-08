@@ -9,7 +9,16 @@
 ========================================================
 	- common
 ========================================================
-*/
+/*テキストの設定だけ追記*/
+.is-en{
+  font-family: $en_font;
+}
+.is-robot{
+  font-family: $robot_font;
+}
+/*テキストの設定だけ追記*/
+
+
 * {
   font-size: 16px;
   font-weight: normal;
@@ -112,4 +121,10 @@ ul {
   .sp-table-row {
     display: table-row !important;
   }
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
 }
