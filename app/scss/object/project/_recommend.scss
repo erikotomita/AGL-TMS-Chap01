@@ -1,0 +1,39 @@
+/*
+========================================================
+	- p-recommend
+========================================================
+*/
+
+.p-recommend{
+  margin: 100px 1vw 0px 1vw;
+  background-color: $lightgray_color;
+  position: relative;
+}
+.p-recommend:before{
+  content: url('../img/1x/imgPoint.png');
+  display: block;
+  position: absolute;
+  top:-150px;
+  left:calc(0px + 10%);
+  height: 302px;
+}
+
+.p-recommend__contents{
+  width:100%;
+  padding: 145px 70px 70px 70px;
+}
+
+.p-recommend__4col{
+  display: inline-block;
+  float: left;
+  width: calc(calc(100% / 4) - 20px);
+  margin:0px 10px 0px 10px;
+  background-color: #fff;
+  padding: 20px;
+  height: 490px;
+
+  @include media-query('s') {
+    width: calc(calc(100% / 2) - 20px);
+    margin-bottom:10px; 
+  }
+}

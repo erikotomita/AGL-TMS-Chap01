@@ -7,3 +7,36 @@
 .c-heading.is-case{
   font-size: 35px;
 }
+
+/*merit*/
+.c-heading.is-merit{
+  font-size: 34px;
+  font-family:  $kozukaMincyo_font;
+  strong{
+    color:$blue_color;
+    font-size: 46px;
+  }
+}
+.c-heading__sub.is-merit{
+  font-size: 47px;
+}
+
+
+/*recommend*/
+.c-heading.is-recommend{
+  font-size: 34px;
+  strong{
+    color:$blue_color;
+    font-size: 46px;
+  }
+  position: absolute;
+  top:1%;
+  right:0;
+}
+.c-heading__sub.is-recommend{
+  font-size: 82px;
+
+  position: absolute;
+  top:-15%;
+  right:0;
+}

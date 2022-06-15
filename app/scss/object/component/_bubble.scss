@@ -1,19 +1,10 @@
 /*
 ========================================================
-	- c-case
+	- c-bubble
 ========================================================
 */
 
-.c-case{
-  font-weight: bold;
-  font-size: 24px;
-  color:#c7c7c7;
-  position: absolute;
-  top:84px;
-  left:84px;
-}
-
-.c-case__comment{
+.c-bubble{
   background-color: $primary;
   border-radius: 10px;
   color:#fff;
@@ -25,7 +16,7 @@
 }
 
 
-.c-case__comment:before {
+.c-bubble:before {
   content: "";
   position: absolute;
   top: -15px;
@@ -38,14 +29,14 @@
 
 }
 
-.c-case__comment p {
+.c-bubble p {
   font-weight: 24px;
   margin: 50px 0px 50px 0px;
   text-align: center;
   font-size: 24px;
 }
 
-.c-case__comment span {
+.c-bubble span {
   background-color: $bluegray_color;
   border-radius: 20px;
   display: inline-block;

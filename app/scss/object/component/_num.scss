@@ -1,0 +1,50 @@
+/*
+========================================================
+	- c-num
+========================================================
+*/
+/*case*/
+.c-num.is-case{
+  font-weight: bold;
+  font-size: 24px;
+  color:#c7c7c7;
+  position: absolute;
+  top:84px;
+  left:84px;
+}
+
+/*merit*/
+.c-num.is-merit{
+    color: #fff;
+    font-size: 42px;
+    font-weight: bold;
+    background: url('../img/SVG/merit.svg') no-repeat  ;
+    display: block;
+    height: 89px;
+    width:111px;
+    padding:15px 10px;
+
+	}
+/*
+.c-num:before{
+  content: url('../img/SVG/merit.svg');
+  width:62px;
+  height: 23px;
+  position: absolute;
+  top:-20px;
+  left:calc(50% - 31px);
+}
+
+.c-num:after{
+		width: calc(100% - 46px);
+		height: 0;
+		display: block;
+		position: absolute;
+		left: 0;
+		content: "";
+    border-top: solid  46px $primary;
+    border-radius: 0px 0px 0px 46px;
+		border-right: solid 46px transparent;
+		top: 100%;
+	}
+  */

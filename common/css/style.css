@@ -641,67 +641,117 @@ html {
 	- p-merrit
 ========================================================
 */
-.p-merrit {
+.p-merit {
   width: 100%;
   padding: 69px 0px 69px 0px;
   text-align: center;
 }
 
-.p-merrit__contents {
+.p-merit__contents {
   width: 100%;
   margin: 0 auto;
 }
+@media screen and (min-width: 993px) {
+  .p-merit__contents {
+    width: 1210px;
+  }
+}
 
-.p-merrit__contents__box.is-right img {
+.p-merit__contents__box {
+  padding-top: 60px;
+}
+
+.p-merit__contents__box.is-right img {
   float: right;
   padding-right: 2vw;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
-  .p-merrit__contents__box.is-right img {
+  .p-merit__contents__box.is-right img {
     width: 100%;
   }
 }
-.p-merrit__contents__box.is-right .p-merrit__contents__box__description {
+.p-merit__contents__box.is-right .p-merit__contents__box__description {
   text-align: left;
   float: left;
-  width: 50%;
+  width: 55%;
   padding-left: 2vw;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
-  .p-merrit__contents__box.is-right .p-merrit__contents__box__description {
+  .p-merit__contents__box.is-right .p-merit__contents__box__description {
     width: 100%;
   }
 }
 
-.p-merrit__contents__box.is-left img {
+.p-merit__contents__box.is-left img {
   float: left;
   padding-left: 2vw;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
-  .p-merrit__contents__box.is-left img {
+  .p-merit__contents__box.is-left img {
     width: 100%;
   }
 }
-.p-merrit__contents__box.is-left .p-merrit__contents__box__description {
+.p-merit__contents__box.is-left .p-merit__contents__box__description {
   text-align: left;
   float: right;
-  width: 50%;
+  width: 55%;
   padding-right: 2vw;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
-  .p-merrit__contents__box.is-left .p-merrit__contents__box__description {
+  .p-merit__contents__box.is-left .p-merit__contents__box__description {
     width: 100%;
   }
 }
 
-.p-merrit__contents__box__description {
+.p-merit__contents__box__description {
   position: relative;
-  padding: 127px 0px 0px 90px;
+  padding: 77px 0px 0px 90px;
 }
-.p-merrit__contents__box__description span {
+.p-merit__contents__box__description span {
   position: absolute;
-  top: 0;
+  top: -30px;
   left: 2vw;
+}
+
+/*
+========================================================
+	- p-recommend
+========================================================
+*/
+.p-recommend {
+  margin: 100px 1vw 0px 1vw;
+  background-color: #ededed;
+  position: relative;
+}
+
+.p-recommend:before {
+  content: url("../img/1x/imgPoint.png");
+  display: block;
+  position: absolute;
+  top: -150px;
+  left: calc(0px + 10%);
+  height: 302px;
+}
+
+.p-recommend__contents {
+  width: 100%;
+  padding: 145px 70px 70px 70px;
+}
+
+.p-recommend__4col {
+  display: inline-block;
+  float: left;
+  width: calc(25% - 20px);
+  margin: 0px 10px 0px 10px;
+  background-color: #fff;
+  padding: 20px;
+  height: 490px;
+}
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .p-recommend__4col {
+    width: calc(50% - 20px);
+    margin-bottom: 10px;
+  }
 }
 
 /*
@@ -712,6 +762,39 @@ html {
 /*case*/
 .c-heading.is-case {
   font-size: 35px;
+}
+
+/*merit*/
+.c-heading.is-merit {
+  font-size: 34px;
+  font-family: "小塚明朝 Pro", "Kozuka Mincyo Pro", serif;
+}
+.c-heading.is-merit strong {
+  color: #252a6d;
+  font-size: 46px;
+}
+
+.c-heading__sub.is-merit {
+  font-size: 47px;
+}
+
+/*recommend*/
+.c-heading.is-recommend {
+  font-size: 34px;
+  position: absolute;
+  top: 1%;
+  right: 0;
+}
+.c-heading.is-recommend strong {
+  color: #252a6d;
+  font-size: 46px;
+}
+
+.c-heading__sub.is-recommend {
+  font-size: 82px;
+  position: absolute;
+  top: -15%;
+  right: 0;
 }
 
 /*
@@ -771,19 +854,10 @@ html {
 
 /*
 ========================================================
-	- c-case
+	- c-bubble
 ========================================================
 */
-.c-case {
-  font-weight: bold;
-  font-size: 24px;
-  color: #c7c7c7;
-  position: absolute;
-  top: 84px;
-  left: 84px;
-}
-
-.c-case__comment {
+.c-bubble {
   background-color: #000000;
   border-radius: 10px;
   color: #fff;
@@ -794,7 +868,7 @@ html {
   width: 100%;
 }
 
-.c-case__comment:before {
+.c-bubble:before {
   content: "";
   position: absolute;
   top: -15px;
@@ -806,14 +880,14 @@ html {
   transform: rotate(95deg);
 }
 
-.c-case__comment p {
+.c-bubble p {
   font-weight: 24px;
   margin: 50px 0px 50px 0px;
   text-align: center;
   font-size: 24px;
 }
 
-.c-case__comment span {
+.c-bubble span {
   background-color: #7a89a8;
   border-radius: 20px;
   display: inline-block;
@@ -825,4 +899,93 @@ html {
   position: absolute;
   top: -15px;
   right: -10px;
+}
+
+/*
+========================================================
+	- c-num
+========================================================
+*/
+/*case*/
+.c-num.is-case {
+  font-weight: bold;
+  font-size: 24px;
+  color: #c7c7c7;
+  position: absolute;
+  top: 84px;
+  left: 84px;
+}
+
+/*merit*/
+.c-num.is-merit {
+  color: #fff;
+  font-size: 42px;
+  font-weight: bold;
+  background: url("../img/SVG/merit.svg") no-repeat;
+  display: block;
+  height: 89px;
+  width: 111px;
+  padding: 15px 10px;
+}
+
+/*
+.c-num:before{
+  content: url('../img/SVG/merit.svg');
+  width:62px;
+  height: 23px;
+  position: absolute;
+  top:-20px;
+  left:calc(50% - 31px);
+}
+
+.c-num:after{
+		width: calc(100% - 46px);
+		height: 0;
+		display: block;
+		position: absolute;
+		left: 0;
+		content: "";
+    border-top: solid  46px $primary;
+    border-radius: 0px 0px 0px 46px;
+		border-right: solid 46px transparent;
+		top: 100%;
+	}
+  */
+/*
+========================================================
+	- c-text
+========================================================
+*/
+/*merit*/
+.c-text__summary.is-merit {
+  font-size: 28px;
+  font-weight: bold;
+}
+.c-text__summary.is-merit strong {
+  color: #252a6d;
+  font-size: 36px;
+}
+
+.c-text__summary.is-merit:after {
+  content: url("../img/SVG/comic.svg");
+  display: inline-block;
+  width: 41px;
+  height: 34px;
+  position: absolute;
+  top: calc(0% + 68px);
+}
+
+.c-text__detail.is-merit {
+  margin-top: 20px;
+  font-size: 21px;
+}
+
+/*recommend*/
+.c-text__summary.is-recommend {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.c-text__detail.is-recommend {
+  font-size: 19px;
 }

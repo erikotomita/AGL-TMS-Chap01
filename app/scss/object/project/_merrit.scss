@@ -4,7 +4,7 @@
 ========================================================
 */
 
-.p-merrit{
+.p-merit{
   width: 100%;
 
   padding: 69px 0px 69px 0px;
@@ -12,29 +12,38 @@
 
 }
 
-.p-merrit__contents{
+
+.p-merit__contents{
   width: 100%;
   margin: 0 auto;
+  @include media-query('l') {
+    width:  1210px;
+  }
 }
-.p-merrit__contents__box.is-right{
+.p-merit__contents__box{
+  padding-top: 60px;
+}
+.p-merit__contents__box.is-right{
   img{
     float:right;
     padding-right: 2vw;
+
     @include media-query('s') {
       width:  100%;
     }
   }
-  .p-merrit__contents__box__description{
+  .p-merit__contents__box__description{
     text-align: left;
     float:left;
-    width:50%;
+    width:55%;
     padding-left: 2vw;
     @include media-query('s') {
       width:  100%;
     }
   }
 }
-.p-merrit__contents__box.is-left{
+.p-merit__contents__box.is-left{
+
   img{
     float:left;
     padding-left: 2vw;
@@ -42,23 +51,22 @@
       width:  100%;
     }
   }
-  .p-merrit__contents__box__description{
+  .p-merit__contents__box__description{
     text-align: left;
     float:right;
-    width:50%;
+    width:55%;
     padding-right: 2vw;
     @include media-query('s') {
       width:  100%;
     }
   }
 }
-.p-merrit__contents__box__description{
+.p-merit__contents__box__description{
   position: relative;
   span{
     position: absolute;
-    top:0;
+    top:-30px;
     left:2vw;
   }
-
-  padding: 127px 0px 0px 90px;
+  padding: 77px 0px 0px 90px;
 }
