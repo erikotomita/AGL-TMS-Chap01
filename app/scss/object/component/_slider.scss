@@ -1,0 +1,31 @@
+/*
+========================================================
+	- c-slider
+========================================================
+*/
+.slider{
+  width: 80vw;
+}
+.slider img{
+  height: auto;
+  width: 100%;}
+
+.prev-arrow {
+  border-bottom: 10px solid  #333;
+  border-left: 0;
+  border-right: 10px solid blue;
+  border-top: 10px solid  #333;
+}
+.next-arrow {
+  border-bottom: 10px solid  #333;
+  border-left: 10px solid red;
+  border-right: 0;
+  border-top: 10px solid  #333;
+}
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  padding: 0;
+}

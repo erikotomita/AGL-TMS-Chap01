@@ -1,4 +1,245 @@
 @charset "UTF-8";
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+[dir=rtl] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+/* Slider */
+.slick-loading .slick-list {
+  background: #fff url("./ajax-loader.gif") center center no-repeat;
+}
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url("./fonts/slick.eot");
+  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Arrows */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none;
+}
+.slick-prev:hover, .slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  outline: none;
+  background: transparent;
+  color: transparent;
+}
+.slick-prev:hover:before, .slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev {
+  left: -25px;
+}
+[dir=rtl] .slick-prev {
+  left: auto;
+  right: -25px;
+}
+.slick-prev:before {
+  content: "←";
+}
+[dir=rtl] .slick-prev:before {
+  content: "→";
+}
+
+.slick-next {
+  right: -25px;
+}
+[dir=rtl] .slick-next {
+  left: -25px;
+  right: auto;
+}
+.slick-next:before {
+  content: "→";
+}
+[dir=rtl] .slick-next:before {
+  content: "←";
+}
+
+/* Dots */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+.slick-dots li button:hover, .slick-dots li button:focus {
+  outline: none;
+}
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+  opacity: 1;
+}
+.slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "•";
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  text-align: center;
+  color: black;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before {
+  color: black;
+  opacity: 0.75;
+}
+
 /*
 ========================================================
 	- reset
@@ -756,6 +997,71 @@ html {
 
 /*
 ========================================================
+	- p-present
+========================================================
+*/
+.p-present {
+  width: 1120px;
+  margin: 120px auto;
+  padding: 69px 0px 69px 0px;
+  text-align: center;
+  background-color: #565f64;
+}
+
+/*
+========================================================
+	- p-design
+========================================================
+*/
+.p-design {
+  width: 100%;
+  position: relative;
+}
+
+.p-design__background {
+  position: absolute;
+  top: 50vh;
+  width: 70%;
+  height: 50%;
+  right: 0;
+  background: #ededed;
+}
+
+.p-design__contents {
+  width: 1120px;
+  margin: 120px auto;
+  position: relative;
+}
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .p-design__contents {
+    width: 100%;
+  }
+}
+
+.p-design__contents__left {
+  float: left;
+}
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .p-design__contents__left {
+    width: 100%;
+  }
+}
+
+.p-design__contents__right {
+  float: right;
+  position: absolute;
+  top: 30%;
+  right: -18%;
+}
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .p-design__contents__right {
+    width: 100%;
+    position: relative;
+  }
+}
+
+/*
+========================================================
 	- c-heading
 ========================================================
 */
@@ -795,6 +1101,47 @@ html {
   position: absolute;
   top: -15%;
   right: 0;
+}
+
+/*PRESENT */
+.c-heading__sub.is-present {
+  color: #fff;
+  font-size: 19px;
+}
+
+.c-heading.is-present {
+  font-size: 36px;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 0px 10px 0px;
+  border-bottom: solid 1px #fff;
+  border-top: solid 1px #fff;
+  margin: 20px auto;
+}
+
+/*PRESENT */
+.c-heading.is-design {
+  font-size: 47px;
+  display: inline-block;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.c-heading.is-design:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  /*線の上下位置*/
+  display: inline-block;
+  width: 50%;
+  /*線の長さ*/
+  height: 1px;
+  /*線の太さ*/
+  background-color: #CBCBCB;
+  /*線の色*/
+  border-radius: 2px;
+  /*線の丸み*/
 }
 
 /*
@@ -953,6 +1300,55 @@ html {
   */
 /*
 ========================================================
+	- c-button
+========================================================
+*/
+.c-button.is-present {
+  display: inline-block;
+  border-radius: 18px;
+  background-color: #fff;
+  font-size: 19px;
+  padding: 3px 15px 3px 15px;
+}
+
+/*
+========================================================
+	- c-slider
+========================================================
+*/
+.slider {
+  width: 80vw;
+}
+
+.slider img {
+  height: auto;
+  width: 100%;
+}
+
+.prev-arrow {
+  border-bottom: 10px solid #333;
+  border-left: 0;
+  border-right: 10px solid blue;
+  border-top: 10px solid #333;
+}
+
+.next-arrow {
+  border-bottom: 10px solid #333;
+  border-left: 10px solid red;
+  border-right: 0;
+  border-top: 10px solid #333;
+}
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  padding: 0;
+}
+
+/*
+========================================================
 	- c-text
 ========================================================
 */
@@ -987,5 +1383,15 @@ html {
 }
 
 .c-text__detail.is-recommend {
+  font-size: 19px;
+}
+
+/*design*/
+.c-text__summary.is-design {
+  font-size: 27px;
+  margin: 20px auto;
+}
+
+.c-text__detail.is-design {
   font-size: 19px;
 }

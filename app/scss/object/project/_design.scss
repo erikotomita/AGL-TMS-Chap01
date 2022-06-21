@@ -1,0 +1,44 @@
+/*
+========================================================
+	- p-design
+========================================================
+*/
+
+.p-design{
+  width: 100%;
+  position: relative;
+}
+.p-design__background{
+  position: absolute;
+  top: 50vh;
+  width: 70%;
+  height: 50%;
+  right: 0;
+  background: $lightgray_color;
+}
+
+.p-design__contents{
+  width: 1120px;
+  margin: 120px auto;
+  position: relative;
+  @include media-query('s') {
+    width:  100%;
+  }
+}
+.p-design__contents__left{
+  float: left;
+  @include media-query('s') {
+    width:  100%;
+  }
+}
+
+.p-design__contents__right{
+  float: right;
+  position: absolute;
+  top:30%;
+  right:-18%;
+  @include media-query('s') {
+    width:  100%;
+  position: relative;
+  }
+}
