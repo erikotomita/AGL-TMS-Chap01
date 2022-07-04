@@ -1062,6 +1062,28 @@ html {
 
 /*
 ========================================================
+	- p-plan
+========================================================
+*/
+.p-plan {
+  width: 1195px;
+  margin: 330px auto 130px auto;
+  text-align: center;
+}
+.p-plan p {
+  margin: 62px auto 130px auto;
+}
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .p-plan {
+    width: 100%;
+  }
+  .p-plan img {
+    width: 100%;
+  }
+}
+
+/*
+========================================================
 	- c-heading
 ========================================================
 */
@@ -1132,6 +1154,31 @@ html {
   position: absolute;
   left: 0;
   bottom: 0;
+  /*線の上下位置*/
+  display: inline-block;
+  width: 50%;
+  /*線の長さ*/
+  height: 1px;
+  /*線の太さ*/
+  background-color: #CBCBCB;
+  /*線の色*/
+  border-radius: 2px;
+  /*線の丸み*/
+}
+
+/*plan*/
+.c-heading.is-plan {
+  font-size: 47px;
+  display: inline-block;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.c-heading.is-plan:before {
+  content: "";
+  position: absolute;
+  left: 25%;
+  top: 0;
   /*線の上下位置*/
   display: inline-block;
   width: 50%;
@@ -1394,4 +1441,41 @@ button {
 
 .c-text__detail.is-design {
   font-size: 19px;
+}
+
+/*
+========================================================
+	- c-list
+========================================================
+*/
+/*plan*/
+.c-list.is-plan {
+  display: inline-block;
+}
+.c-list.is-plan dl {
+  width: 80%;
+  padding: 1em 0px 1em 0em;
+  border-bottom: solid 1px #cbcbcb;
+  display: inline-block;
+}
+.c-list.is-plan dl dt {
+  /*左に寄せる*/
+  text-align: left;
+  float: left;
+  /*後続の左寄せを解除*/
+  clear: left;
+  margin-right: 0.5em;
+  width: 145px;
+}
+.c-list.is-plan dl dd {
+  float: left;
+  margin-left: 1em;
+}
+.c-list.is-plan dl dd .is-tag {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #fff;
+  border: solid 1px #cbcbcb;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  margin-left: 1em;
 }

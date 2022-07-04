@@ -1,0 +1,38 @@
+/*
+========================================================
+	- c-list
+========================================================
+*/
+/*plan*/
+.c-list.is-plan{
+  display: inline-block;
+
+  dl{
+     width:80%;
+     padding: 1em 0px 1em 0em;
+     border-bottom: solid 1px #cbcbcb;
+     display: inline-block;
+      dt {
+    	    /*左に寄せる*/
+          text-align:left;
+    	    float: left ;
+    	    /*後続の左寄せを解除*/
+    	    clear: left ;
+    	    margin-right: 0.5em ;
+    	    width: 145px ;
+    }
+
+    dd {
+    	    float: left ;
+    	    margin-left: 1em ;
+          .is-tag{
+              display: inline-block;
+              border-radius: 5px;
+              background-color: #fff;
+              border: solid 1px #cbcbcb;
+              padding: 0.2em  0.5em 0.2em  0.5em;
+              margin-left: 1em;
+          }
+    }
+  }
+}
