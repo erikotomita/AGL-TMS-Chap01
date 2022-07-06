@@ -77,6 +77,8 @@
   border-radius: 2px;/*線の丸み*/
 }
 
+
+
 /*plan*/
 .c-heading.is-plan{
   font-size: 47px;
@@ -94,4 +96,31 @@
   height: 1px;/*線の太さ*/
   background-color: #CBCBCB;/*線の色*/
   border-radius: 2px;/*線の丸み*/
+}
+
+/*finance*/
+.c-heading.is-finance{
+  font-size: 47px;
+  display:inline-block;
+  padding-bottom: 20px;
+  position: relative;
+}
+.c-heading.is-finance:after{
+  content: '';
+  position: absolute;
+  left: 25%;
+  bottom: 0;/*線の上下位置*/
+  display: inline-block;
+  width: 50%;/*線の長さ*/
+  height: 1px;/*線の太さ*/
+  background-color: #CBCBCB;/*線の色*/
+  border-radius: 2px;/*線の丸み*/
+}
+.c-heading__sub.is-finance{
+  font-size: 30px;
+  display:inline-block;
+  padding: 10px;
+  background-color: $primary;
+  color:#fff;
+  font-weight: bold;
 }

@@ -1055,7 +1055,6 @@ html {
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .p-design__contents__right {
-    width: 100%;
     position: relative;
   }
 }
@@ -1080,6 +1079,30 @@ html {
   .p-plan img {
     width: 100%;
   }
+}
+
+/*
+========================================================
+	- p-finance
+========================================================
+*/
+.p-finance {
+  width: 100%;
+  margin: 0 auto;
+  padding: 88px 0px 69px 0px;
+  text-align: center;
+  background-color: #ededed;
+}
+
+.p-finance__contents {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.p-finance__2col {
+  background-color: #fff;
+  display: inline-block;
+  width: 40%;
 }
 
 /*
@@ -1189,6 +1212,40 @@ html {
   /*線の色*/
   border-radius: 2px;
   /*線の丸み*/
+}
+
+/*finance*/
+.c-heading.is-finance {
+  font-size: 47px;
+  display: inline-block;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.c-heading.is-finance:after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  bottom: 0;
+  /*線の上下位置*/
+  display: inline-block;
+  width: 50%;
+  /*線の長さ*/
+  height: 1px;
+  /*線の太さ*/
+  background-color: #CBCBCB;
+  /*線の色*/
+  border-radius: 2px;
+  /*線の丸み*/
+}
+
+.c-heading__sub.is-finance {
+  font-size: 30px;
+  display: inline-block;
+  padding: 10px;
+  background-color: #000000;
+  color: #fff;
+  font-weight: bold;
 }
 
 /*
@@ -1465,11 +1522,22 @@ button {
   /*後続の左寄せを解除*/
   clear: left;
   margin-right: 0.5em;
-  width: 145px;
+  width: 20%;
+}
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .c-list.is-plan dl dt {
+    width: 30%;
+  }
 }
 .c-list.is-plan dl dd {
   float: left;
   margin-left: 1em;
+}
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .c-list.is-plan dl dd {
+    width: 60%;
+    text-align: left;
+  }
 }
 .c-list.is-plan dl dd .is-tag {
   display: inline-block;
@@ -1477,5 +1545,51 @@ button {
   background-color: #fff;
   border: solid 1px #cbcbcb;
   padding: 0.2em 0.5em 0.2em 0.5em;
+  margin-right: 1em;
+  position: relative;
+}
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .c-list.is-plan dl dd .is-tag {
+    font-size: 12px;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-bottom: 1em;
+    float: left;
+  }
+}
+
+/*finance*/
+.c-list.is-finance dl {
+  width: 80%;
+  padding: 1em 0px 1em 0em;
+  border-bottom: solid 1px #cbcbcb;
+  display: inline-block;
+}
+.c-list.is-finance dl dt {
+  /*左に寄せる*/
+  text-align: left;
+  float: left;
+  /*後続の左寄せを解除*/
+  clear: left;
+  margin-right: 0.5em;
+  width: 30%;
+  position: relative;
+}
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .c-list.is-finance dl dt {
+    width: 30%;
+  }
+}
+.c-list.is-finance dl dt:after {
+  /*border-bottom: 3px dotted $primary;*/
+  content: "・・・・・・・・・・・・・・・・";
+  position: absolute;
+  top: 0%;
+}
+.c-list.is-finance dl dd {
+  float: right;
+  text-align: right;
   margin-left: 1em;
+  background-color: #fff;
 }

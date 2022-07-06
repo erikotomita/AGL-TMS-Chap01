@@ -19,20 +19,71 @@
     	    /*後続の左寄せを解除*/
     	    clear: left ;
     	    margin-right: 0.5em ;
-    	    width: 145px ;
-    }
+    	    width: 20%;
+          @include media-query('s') {
+            width: 30%;
+          }
+        }
 
     dd {
     	    float: left ;
     	    margin-left: 1em ;
+          @include media-query('s') {
+            width: 60%;
+            text-align: left;
+          }
           .is-tag{
               display: inline-block;
               border-radius: 5px;
               background-color: #fff;
               border: solid 1px #cbcbcb;
               padding: 0.2em  0.5em 0.2em  0.5em;
-              margin-left: 1em;
+              margin-right: 1em;
+              position:  relative;
+              @include media-query('s') {
+                font-size: 12px;
+                vertical-align:  top;
+                box-sizing: border-box;
+                margin-bottom: 1em;
+                float: left ;
+              }
           }
+
     }
+  }
+}
+
+/*finance*/
+.c-list.is-finance{
+  dl{
+     width:80%;
+     padding: 1em 0px 1em 0em;
+     display: inline-block;
+      dt {
+    	    /*左に寄せる*/
+          text-align:left;
+    	    float: left ;
+    	    /*後続の左寄せを解除*/
+    	    clear: left ;
+    	    margin-right: 0.5em ;
+    	    width: 30%;
+          position: relative;
+          @include media-query('s') {
+            width: 30%;
+          }
+        }
+        dt:after {
+          /*border-bottom: 3px dotted $primary;*/
+        content: '・・・・・・・・・・・・・・・・';
+          position: absolute;
+          top: 0%;
+        }
+    dd {
+    	    float: right ;
+          text-align: right;
+    	    margin-left: 1em ;
+          background-color: #fff;
+    }
+
   }
 }
