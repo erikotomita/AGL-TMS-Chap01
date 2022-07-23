@@ -40,3 +40,22 @@
 .c-text__detail.is-design{
     font-size: 19px;
 }
+/*finance*/
+.c-text__finance__subTitle{
+  font-size: 25px;
+  font-weight: bold;
+  display: block;
+}
+.c-text__finance__price{
+  color: $bluegray_color;
+  font-size: 90px;
+  font-weight: bold;
+}
+.c-text__finance__yen{
+  color: $bluegray_color;
+  font-size: 35px;
+  font-weight: bold;
+}
+.c-text__finance__priceDetail{
+display: block;
+}

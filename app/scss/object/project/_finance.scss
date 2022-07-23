@@ -8,8 +8,8 @@
   width: 100%;
   margin: 0 auto;
   padding: 88px 0px 69px 0px;
-  text-align: center;
   background-color: $lightgray_color;
+  text-align: center;
 }
 .p-finance__contents{
   width: 100%;
@@ -19,4 +19,24 @@
   background-color:#fff;
   display: inline-block;
   width: 40%;
+  height: 400px;
+  vertical-align: bottom;
+  position: relative;
+
+}
+.p-finance__2col__right{
+  position: absolute;
+  top: 20%;
+}
+.p-finance__2col__left{
+   text-align: left;
+   position: absolute;
+   top: 20%;
+   left: 20%;
+}
+
+.p-finance__2col__left:after{
+  content: url('../img/SVG/atamakin.svg');
+  position: absolute;
+  top:0px;
 }
