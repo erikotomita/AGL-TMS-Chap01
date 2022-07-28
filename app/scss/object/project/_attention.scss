@@ -1,0 +1,54 @@
+/*
+========================================================
+	- p-attention
+========================================================
+*/
+
+.p-attention{
+  width: 100%;
+  margin: 0 auto;
+  padding: 88px 0px 69px 0px;
+  text-align: center;
+}
+.p-attention__box{
+  width: 67%;
+  margin: 0 auto 30px;
+  background-color: $deepbrack_color;
+  text-align: left;
+  padding: 40px 60px;
+  h3{
+      background-color: #fff;
+      border-radius: 40px;
+      display: inline-block;
+      padding: 5px;
+      font-size: 20px;
+  }
+}
+
+
+.p-attention__list{
+
+  width: 64%;
+  margin: auto;
+  display: flex;
+  .p-attention__list__5col{
+    width: 100%;
+        text-align: center;
+        padding: 20px 20px;
+      }
+      img:nth-child(n+0){
+        height: 83px;
+        margin: 10px 0px;
+      }
+
+    }
+
+          .p-attention__list__5col:nth-child(n+0):nth-child(-n+5){
+            border-bottom: 1px $lightgray_color solid;
+          }
+          .p-attention__list__5col:nth-child(n+0):nth-child(-n+4){
+            border-right: 1px $lightgray_color solid;
+          }
+          .p-attention__list__5col:nth-child(n+6):nth-child(-n+9){
+            border-right: 1px $lightgray_color solid;
+          }

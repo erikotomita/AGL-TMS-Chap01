@@ -59,3 +59,31 @@
 .c-text__finance__priceDetail{
 display: block;
 }
+
+/*flow*/
+.c-text__summary.is-flowChart{
+    color: #fff;
+    font-size: 21px;
+    font-style: normal;
+    border-bottom: 1px #fff solid;
+    padding: 20px 0px 10px 0px;
+}
+.c-text__detail.is-flowChart{
+  color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    padding-top:10px;
+}
+
+/*attention*/
+.c-text__summary.is-attentionBox{
+  color: #fff;
+  font-size: 32px;
+}
+.c-text__detail.is-attentionBox{
+  color: #fff;
+  font-size: 18px;
+}
+.c-text__caption.is-attentionList{
+  font-size: 14px;
+}

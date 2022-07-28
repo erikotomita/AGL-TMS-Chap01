@@ -1,0 +1,17 @@
+/*
+========================================================
+	- p-contact
+========================================================
+*/
+
+.p-contact{
+  width: 1120px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10vh 0px;
+  span{
+    font-size: 47px;
+  }
+  border-top: 2px solid $primary;
+  border-bottom: 2px solid $primary;
+}

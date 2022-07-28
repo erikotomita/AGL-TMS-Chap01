@@ -1,0 +1,30 @@
+/*
+========================================================
+	- p-access
+========================================================
+*/
+
+.p-access{
+  width: 100%;
+  margin: 0 auto;
+}
+.p-access__2col{
+  width: 50%;
+  height:700px;
+  display: inline-block;
+  float: left;
+}
+.p-access__2col.is-right{
+  background-color: $lightgray_color;
+  position: relative;
+  .p-access__contents{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    text-align: center;
+  }
+  h3{
+    margin-bottom: 40px;
+  }
+}

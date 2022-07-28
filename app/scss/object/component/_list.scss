@@ -24,7 +24,6 @@
             width: 30%;
           }
         }
-
     dd {
     	    float: left ;
     	    margin-left: 1em ;
@@ -85,5 +84,44 @@
           background-color: #fff;
     }
 
+  }
+}
+
+/*plan*/
+.c-list.is-access{
+  display: inline-block;
+  font-size: 18px;
+  dl{
+     width:35vw;
+     padding: 1em 0px 0em 0em;
+     display: inline-block;
+      dt {
+          width:30%;
+    	    /*左に寄せる*/
+          text-align:center;
+    	    float: left ;
+    	    /*後続の左寄せを解除*/
+    	    clear: left ;
+    	    margin-right: 0.5em ;
+          background-color: $darkgray_color;
+          color: #fff;
+          @include media-query('s') {
+            width: 30%;
+          }
+        }
+    dd {
+          width:60%;
+          text-align: left;
+    	    float: left;
+    	    margin-left: 1em ;
+          @include media-query('s') {
+            width: 60%;
+            text-align: left;
+          }
+          span{
+            font-size: 12px;
+          }
+
+    }
   }
 }

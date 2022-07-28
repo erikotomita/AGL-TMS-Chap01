@@ -57,7 +57,7 @@
   margin:20px auto;
 }
 
-/*PRESENT */
+/*design */
 .c-heading.is-design{
   font-size: 47px;
   display:inline-block;
@@ -68,7 +68,7 @@
 .c-heading.is-design:after{
   content: '';
   position: absolute;
-  left: 0;
+  left: 50;
   bottom: 0;/*線の上下位置*/
   display: inline-block;
   width: 50%;/*線の長さ*/
@@ -137,4 +137,27 @@
 }
 .c-heading__sub.is-flow{
   font-size: 27px;
+}
+
+/*access*/
+.c-heading__sub.is-access{
+  font-size: 47px;
+  display:inline-block;
+  padding-bottom: 20px;
+  position: relative;
+}
+.c-heading__sub.is-access:after{
+  content: '';
+  position: absolute;
+  left: 25%;
+  bottom: 0;/*線の上下位置*/
+  display: inline-block;
+  width: 50%;/*線の長さ*/
+  height: 1px;/*線の太さ*/
+  background-color: #CBCBCB;/*線の色*/
+}
+.c-heading.is-access{
+  display: block;
+  font-size: 28px;
+  margin-top: 20px;
 }

@@ -1138,6 +1138,169 @@ html {
   text-align: center;
 }
 
+.p-flow__chart {
+  margin: 70px 0px 70px 0px;
+}
+
+.p-flow__chart__list {
+  width: 95%;
+  margin: 0 auto;
+}
+.p-flow__chart__list .p-flow__chart__list__box i {
+  position: relative;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  width: calc(20% - 50px);
+  margin: 0px 20px 0px 20px;
+  padding: 50px 20px;
+  height: 242px;
+  background-color: #565f64;
+}
+.p-flow__chart__list .p-flow__chart__list__box i .p-flow__chart__list__box__img {
+  height: 27px;
+}
+.p-flow__chart__list .p-flow__chart__list__box i:first-child {
+  background-color: #231815;
+}
+.p-flow__chart__list .p-flow__chart__list__box i:last-child {
+  background-color: #7a89a8;
+}
+.p-flow__chart__list .p-flow__chart__list__box i:nth-child(n+0):nth-child(-n+4):after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  /* 縦軸をセンタリングする */
+  right: -35px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  /* 縦軸をセンタリングする */
+  border: 8px solid transparent;
+  border-left: 12px solid #231815;
+  /* 好みで色を変えてください */
+}
+
+/*
+========================================================
+	- p-attention
+========================================================
+*/
+.p-attention {
+  width: 100%;
+  margin: 0 auto;
+  padding: 88px 0px 69px 0px;
+  text-align: center;
+}
+
+.p-attention__box {
+  width: 67%;
+  margin: 0 auto 30px;
+  background-color: #231815;
+  text-align: left;
+  padding: 40px 60px;
+}
+.p-attention__box h3 {
+  background-color: #fff;
+  border-radius: 40px;
+  display: inline-block;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.p-attention__list {
+  width: 64%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.p-attention__list .p-attention__list__5col {
+  width: 100%;
+  text-align: center;
+  padding: 20px 20px;
+}
+.p-attention__list img:nth-child(n+0) {
+  height: 83px;
+  margin: 10px 0px;
+}
+
+.p-attention__list__5col:nth-child(n+0):nth-child(-n+5) {
+  border-bottom: 1px #ededed solid;
+}
+
+.p-attention__list__5col:nth-child(n+0):nth-child(-n+4) {
+  border-right: 1px #ededed solid;
+}
+
+.p-attention__list__5col:nth-child(n+6):nth-child(-n+9) {
+  border-right: 1px #ededed solid;
+}
+
+/*
+========================================================
+	- p-access
+========================================================
+*/
+.p-access {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.p-access__2col {
+  width: 50%;
+  height: 700px;
+  display: inline-block;
+  float: left;
+}
+
+.p-access__2col.is-right {
+  background-color: #ededed;
+  position: relative;
+}
+.p-access__2col.is-right .p-access__contents {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+  text-align: center;
+}
+.p-access__2col.is-right h3 {
+  margin-bottom: 40px;
+}
+
+/*
+========================================================
+	- p-contact
+========================================================
+*/
+.p-contact {
+  width: 1120px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10vh 0px;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+}
+.p-contact span {
+  font-size: 47px;
+}
+
+/*
+========================================================
+	- p-footer
+========================================================
+*/
+.p-footer {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 6vh 0px;
+}
+.p-footer img {
+  height: 78px;
+}
+
 /*
 ========================================================
 	- c-heading
@@ -1197,7 +1360,7 @@ html {
   margin: 20px auto;
 }
 
-/*PRESENT */
+/*design */
 .c-heading.is-design {
   font-size: 47px;
   display: inline-block;
@@ -1208,7 +1371,7 @@ html {
 .c-heading.is-design:after {
   content: "";
   position: absolute;
-  left: 0;
+  left: 50;
   bottom: 0;
   /*線の上下位置*/
   display: inline-block;
@@ -1294,6 +1457,35 @@ html {
 
 .c-heading__sub.is-flow {
   font-size: 27px;
+}
+
+/*access*/
+.c-heading__sub.is-access {
+  font-size: 47px;
+  display: inline-block;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.c-heading__sub.is-access:after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  bottom: 0;
+  /*線の上下位置*/
+  display: inline-block;
+  width: 50%;
+  /*線の長さ*/
+  height: 1px;
+  /*線の太さ*/
+  background-color: #CBCBCB;
+  /*線の色*/
+}
+
+.c-heading.is-access {
+  display: block;
+  font-size: 28px;
+  margin-top: 20px;
 }
 
 /*
@@ -1571,6 +1763,37 @@ button {
   display: block;
 }
 
+/*flow*/
+.c-text__summary.is-flowChart {
+  color: #fff;
+  font-size: 21px;
+  font-style: normal;
+  border-bottom: 1px #fff solid;
+  padding: 20px 0px 10px 0px;
+}
+
+.c-text__detail.is-flowChart {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  padding-top: 10px;
+}
+
+/*attention*/
+.c-text__summary.is-attentionBox {
+  color: #fff;
+  font-size: 32px;
+}
+
+.c-text__detail.is-attentionBox {
+  color: #fff;
+  font-size: 18px;
+}
+
+.c-text__caption.is-attentionList {
+  font-size: 14px;
+}
+
 /*
 ========================================================
 	- c-list
@@ -1662,4 +1885,46 @@ button {
   text-align: right;
   margin-left: 1em;
   background-color: #fff;
+}
+
+/*plan*/
+.c-list.is-access {
+  display: inline-block;
+  font-size: 18px;
+}
+.c-list.is-access dl {
+  width: 35vw;
+  padding: 1em 0px 0em 0em;
+  display: inline-block;
+}
+.c-list.is-access dl dt {
+  width: 30%;
+  /*左に寄せる*/
+  text-align: center;
+  float: left;
+  /*後続の左寄せを解除*/
+  clear: left;
+  margin-right: 0.5em;
+  background-color: #565f64;
+  color: #fff;
+}
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .c-list.is-access dl dt {
+    width: 30%;
+  }
+}
+.c-list.is-access dl dd {
+  width: 60%;
+  text-align: left;
+  float: left;
+  margin-left: 1em;
+}
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .c-list.is-access dl dd {
+    width: 60%;
+    text-align: left;
+  }
+}
+.c-list.is-access dl dd span {
+  font-size: 12px;
 }
