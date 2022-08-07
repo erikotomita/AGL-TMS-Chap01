@@ -128,3 +128,15 @@ ul {
     display: block;
     clear: both;
 }
+
+/*PCでは無効（改行しない）*/
+.sma{
+    display: none;
+}
+
+/*スマートフォンでは有効（改行する）*/
+@media screen and (max-width:576px) {
+    .sma{
+        display: block;
+    }
+}

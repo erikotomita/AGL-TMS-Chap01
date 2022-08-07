@@ -12,6 +12,12 @@
   top:84px;
   left:84px;
 }
+.c-num.is-case.is-2nd{
+    @include media-query('s') {
+      position: absolute;
+       left:75%;
+    }
+}
 
 /*merit*/
 .c-num.is-merit{

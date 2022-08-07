@@ -6,7 +6,6 @@
 
 .p-merit{
   width: 100%;
-
   padding: 69px 0px 69px 0px;
   text-align: center;
 
@@ -16,52 +15,66 @@
 .p-merit__contents{
   width: 100%;
   margin: 0 auto;
+
   @include media-query('l') {
-    width:  1210px;
+    min-width:  1210px;
+    .p-merit__contents__box__description{
+      min-width: 590px;
+      display: inline-block;
+      margin-right: 5vw;
+    }
+    .p-merit__img{
+      width:40%;
+      display: inline-block;
+      position: relative;
+      top:-100px;
+    }
   }
-}
-.p-merit__contents__box{
-  padding-top: 60px;
-}
-.p-merit__contents__box.is-right{
-  img{
-    float:right;
-    padding-right: 2vw;
+  @include media-query('m') {
+    width: 100%;
+    .p-merit__contents__box__description{
+      width: 590px;
+      display: inline-block;
+    }
+    .p-merit__img{
+      width:40%;
+      display: inline-block;
+    }
+  }
+  @include media-query('s') {
+    margin-top: 40px;
+    width: 90%;
+    .p-merit__img{
+      margin: 40px 0px 70px 0px;
+    }
+    display: flex;
+    flex-direction: column;
+      .order1 {
+        order: 1;
+      }
+      .order2 {
+        order: 2;
+      }
+      .order3 {
+        order: 3;
+      }
+      .order4 {
+        order: 4;
+      }
+      .order5 {
+        order: 5;
+      }
+      .order6 {
+        order: 6;
+      }
+  }
 
-    @include media-query('s') {
-      width:  100%;
-    }
-  }
-  .p-merit__contents__box__description{
-    text-align: left;
-    float:left;
-    width:55%;
-    padding-left: 2vw;
-    @include media-query('s') {
-      width:  100%;
-    }
-  }
-}
-.p-merit__contents__box.is-left{
 
-  img{
-    float:left;
-    padding-left: 2vw;
-    @include media-query('s') {
-      width:  100%;
-    }
-  }
-  .p-merit__contents__box__description{
-    text-align: left;
-    float:right;
-    width:55%;
-    padding-right: 2vw;
-    @include media-query('s') {
-      width:  100%;
-    }
-  }
 }
+
+
 .p-merit__contents__box__description{
+    text-align: left;
   position: relative;
   span{
     position: absolute;
@@ -69,4 +82,8 @@
     left:2vw;
   }
   padding: 77px 0px 0px 90px;
+
+  @include media-query('s') {
+   padding: 50px 10px 0px 50px;
+  }
 }

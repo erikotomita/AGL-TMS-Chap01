@@ -4,48 +4,76 @@
 ========================================================
 */
 /*case*/
+.c_heading{
+  letter-spacing:0em;
+}
 .c-heading.is-case{
   font-size: 35px;
+  @include media-query('s') {
+   font-size: 22px;
+  }
 }
 
 /*merit*/
 .c-heading.is-merit{
   font-size: 34px;
   font-family:  $kozukaMincyo_font;
+  @include media-query('s') {
+   font-size: 20px;
+  }
   strong{
     color:$blue_color;
     font-size: 46px;
+    @include media-query('s') {
+     font-size: 30px;
+    }
   }
 }
 .c-heading__sub.is-merit{
   font-size: 47px;
+  @include media-query('s') {
+   font-size: 23px;
+  }
 }
 
 
 /*recommend*/
 .c-heading.is-recommend{
   font-size: 34px;
-  strong{
-    color:$blue_color;
-    font-size: 46px;
-  }
   position: absolute;
   top:1%;
   right:0;
+  @include media-query('s') {
+   font-size: 20px;
+   top:2%;
+  }
+  strong{
+    color:$blue_color;
+    font-size: 46px;
+    @include media-query('s') {
+     font-size: 30px;
+    }
+  }
+
 }
 .c-heading__sub.is-recommend{
   font-size: 82px;
-
   position: absolute;
   top:-15%;
   right:0;
+  @include media-query('s') {
+   font-size: 46px;
+   top:-3%;
+  }
 }
 
 /*PRESENT */
 .c-heading__sub.is-present{
   color:#fff;
   font-size: 19px;
-
+  @include media-query('s') {
+   font-size: 16px;
+  }
 }
 .c-heading.is-present{
   font-size: 36px;
@@ -55,6 +83,9 @@
   border-bottom: solid 1px #fff;
   border-top: solid 1px #fff;
   margin:20px auto;
+  @include media-query('s') {
+   font-size: 19px;
+  }
 }
 
 /*design */

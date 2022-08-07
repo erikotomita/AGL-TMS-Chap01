@@ -18,6 +18,12 @@ $elements: 3;
     background-image: url("../img/SVG/_0"+#{$i + 1}+".svg");
   }
 }
+.p-case__contents__3col:nth-child(2) {
+    @include media-query('s') {
+      background-position: top right;
+    }
+}
+
 .p-case__contents{
   width: 100%;
   margin: 0 auto;
@@ -26,6 +32,7 @@ $elements: 3;
     width:  100%;
   }
 }
+
 .p-case__contents__3col{
   display: inline-block;
   vertical-align:middle;
@@ -39,9 +46,13 @@ $elements: 3;
   &:nth-child(2) {
     margin-left: 1%;
     margin-right: 1%;
+    @include media-query('s') {
+      margin: 0 auto;
+      width:90%;
+    }
   }
   @include media-query('s') {
-    margin: 33px 0px 33px 25px;
-    width: 100%;
+    margin: 0 auto;
+    width:90%;
   }
 }

@@ -7,9 +7,16 @@
 .c-text__summary.is-merit{
    font-size: 28px;
    font-weight:bold;
+   @include media-query('s') {
+    font-size: 20px;
+   }
    strong{
      color:$blue_color;
       font-size: 36px;
+      font-weight:bold;
+      @include media-query('s') {
+       font-size: 28px;
+      }
    }
 	}
 .c-text__summary.is-merit:after{
@@ -19,18 +26,32 @@
    height: 34px;
    position: absolute;
    top:calc(0% + 68px);
+
+   @include media-query('s') {
+     position: absolute;
+     top:calc(0% + 38px);
+   }
 }
 .c-text__detail.is-merit{
   margin-top:20px;
   font-size: 21px;
+  @include media-query('s') {
+   font-size: 16px;
+  }
 }
 /*recommend*/
 .c-text__summary.is-recommend{
    font-size: 20px;
    margin-bottom: 10px;
+   @include media-query('s') {
+      font-size: 18px;
+   }
 }
 .c-text__detail.is-recommend{
      font-size: 19px;
+     @include media-query('s') {
+        font-size: 16px;
+     }
 }
 /*design*/
 .c-text__summary.is-design{

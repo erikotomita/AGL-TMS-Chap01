@@ -8,19 +8,42 @@
   margin: 100px 1vw 0px 1vw;
   background-color: $lightgray_color;
   position: relative;
+  @include media-query('s') {
+   margin: 100px 0px 0px 0px;
+   padding-bottom: 160px;
+  }
 }
-.p-recommend:before{
-  content: url('../img/1x/imgPoint.png');
-  display: block;
-  position: absolute;
-  top:-150px;
-  left:calc(0px + 10%);
-  height: 302px;
+@include media-query('l') {
+    .p-recommend:before{
+      content: url('../img/1x/imgPoint.png');
+      display: block;
+      position: absolute;
+      top:-150px;
+      left:calc(0px + 10%);
+      height: 302px;
+    }
+}
+
+@include media-query('s') {
+  .p-recommend:after{
+    content: '';/*何も入れない*/
+    display: inline-block;/*忘れずに！*/
+    height: 70%;/*画像の高さ*/
+    width: 70%;/*画像の高さ*/
+    background-image: url(../img/1x/imgPoint.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right:0px;
+  }
 }
 
 .p-recommend__contents{
   width:100%;
   padding: 145px 70px 70px 70px;
+  @include media-query('s') {
+  padding:  90px 0px 0px 0px;
+  }
 }
 
 .p-recommend__4col{
@@ -33,7 +56,8 @@
   height: 490px;
 
   @include media-query('s') {
+    margin:0px 10px 0px 10px;
     width: calc(calc(100% / 2) - 20px);
-    margin-bottom:10px; 
+    margin-bottom:10px;
   }
 }
