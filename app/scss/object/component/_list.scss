@@ -12,6 +12,9 @@
      padding: 1em 0px 1em 0em;
      border-bottom: solid 1px #cbcbcb;
      display: inline-block;
+     @include media-query('s') {
+       width: 90%;
+     }
       dt {
     	    /*左に寄せる*/
           text-align:left;
@@ -21,15 +24,16 @@
     	    margin-right: 0.5em ;
     	    width: 20%;
           @include media-query('s') {
-            width: 30%;
+            width: 25%;
           }
         }
     dd {
     	    float: left ;
     	    margin-left: 1em ;
           @include media-query('s') {
-            width: 60%;
+            width: 65%;
             text-align: left;
+            font-size: 14px;
           }
           .is-tag{
               display: inline-block;
@@ -68,7 +72,7 @@
     	    width: 30%;
           position: relative;
           @include media-query('s') {
-            width: 30%;
+            width: 32%;
           }
         }
         dt:after {

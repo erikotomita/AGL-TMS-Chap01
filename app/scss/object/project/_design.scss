@@ -15,6 +15,12 @@
   height: 50%;
   right: 0;
   background: $lightgray_color;
+  @include media-query('s') {
+    top: 100px;
+    width: 50%;
+    height: 50vh;
+    right: 0;
+  }
 }
 
 .p-design__contents{
@@ -22,7 +28,7 @@
   margin: 120px auto;
   position: relative;
   @include media-query('s') {
-    width:  100%;
+    width:  90%;
   }
 }
 .p-design__contents__left{
@@ -39,5 +45,8 @@
   right:-18%;
   @include media-query('s') {
   position: relative;
+  float: none;
+  top:60px;
+  right:0;
   }
 }

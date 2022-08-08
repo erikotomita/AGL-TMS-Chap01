@@ -1090,6 +1090,7 @@ html {
   text-align: center;
   background-color: #565f64;
   position: relative;
+  z-index: 0;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .p-present {
@@ -1097,6 +1098,9 @@ html {
   }
 }
 
+.p-present:before {
+  z-index: -1;
+}
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .p-present:before {
     content: "";
@@ -1114,6 +1118,9 @@ html {
     right: 40px;
     top: 60px;
   }
+}
+.p-present:before div {
+  z-index: 1;
 }
 
 /*
@@ -1134,6 +1141,14 @@ html {
   right: 0;
   background: #ededed;
 }
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .p-design__background {
+    top: 100px;
+    width: 50%;
+    height: 50vh;
+    right: 0;
+  }
+}
 
 .p-design__contents {
   width: 1120px;
@@ -1142,7 +1157,7 @@ html {
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .p-design__contents {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -1164,6 +1179,9 @@ html {
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .p-design__contents__right {
     position: relative;
+    float: none;
+    top: 60px;
+    right: 0;
   }
 }
 
@@ -1182,10 +1200,15 @@ html {
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .p-plan {
-    width: 100%;
+    width: 90%;
+    margin: 130px auto 130px auto;
+  }
+  .p-plan p {
+    margin: 62px auto 62px auto;
   }
   .p-plan img {
-    width: 100%;
+    width: 45%;
+    margin-top: 30px;
   }
 }
 
@@ -1215,6 +1238,12 @@ html {
   vertical-align: bottom;
   position: relative;
 }
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .p-finance__2col {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+}
 
 .p-finance__2col__right {
   position: absolute;
@@ -1224,8 +1253,11 @@ html {
 .p-finance__2col__left {
   text-align: left;
   position: absolute;
-  top: 20%;
-  left: 20%;
+  top: 50%;
+  left: 65%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 .p-finance__2col__left:after {
@@ -1249,7 +1281,20 @@ html {
 .p-flow__chart {
   margin: 70px 0px 70px 0px;
 }
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .p-flow__chart {
+    margin: 70px 0px 0px 0px;
+  }
+}
 
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .p-flow {
+    padding-bottom: 0px;
+  }
+  .p-flow .p-flow__chart {
+    margin-bottom: 0px;
+  }
+}
 .p-flow__chart__list {
   width: 95%;
   margin: 0 auto;
@@ -1287,10 +1332,18 @@ html {
   border-left: 12px solid #231815;
   /* 好みで色を変えてください */
 }
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .p-flow__chart__list .p-flow__chart__list__box i {
+    width: calc(50% - 50px);
+    margin: 0px 20px 20px 20px;
+    padding: 30px 10px;
+    height: auto;
+  }
+}
 
 /*
 ========================================================
-	- p-attention
+- p-attention
 ========================================================
 */
 .p-attention {
@@ -1298,6 +1351,12 @@ html {
   margin: 0 auto;
   padding: 88px 0px 69px 0px;
   text-align: center;
+}
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .p-attention {
+    width: 90%;
+    padding: 40px 0px 40px 0px;
+  }
 }
 
 .p-attention__box {
@@ -1313,6 +1372,20 @@ html {
   display: inline-block;
   padding: 5px;
   font-size: 20px;
+}
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .p-attention__box {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .p-attention__box h3 {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
 }
 
 .p-attention__list {
@@ -1331,19 +1404,68 @@ html {
   height: 83px;
   margin: 10px 0px;
 }
-
-.p-attention__list__5col:nth-child(n+0):nth-child(-n+5) {
-  border-bottom: 1px #ededed solid;
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .p-attention__list {
+    width: 100%;
+    display: block;
+  }
+  .p-attention__list .p-attention__list__5col {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    height: 200px;
+  }
 }
 
-.p-attention__list__5col:nth-child(n+0):nth-child(-n+4) {
-  border-right: 1px #ededed solid;
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .p-attention__list__container {
+    width: 100%;
+    border: 1px #ededed solid;
+    padding: 30px;
+  }
 }
 
-.p-attention__list__5col:nth-child(n+6):nth-child(-n+9) {
-  border-right: 1px #ededed solid;
-}
+@media screen and (min-width: 993px) {
+  .p-attention__list__5col:nth-child(n+0):nth-child(-n+5) {
+    border-bottom: 1px #ededed solid;
+  }
 
+  .p-attention__list__5col:nth-child(n+0):nth-child(-n+4) {
+    border-right: 1px #ededed solid;
+  }
+
+  .p-attention__list__5col:nth-child(n+6):nth-child(-n+9) {
+    border-right: 1px #ededed solid;
+  }
+}
+@media screen and (min-width: 577px) {
+  .p-attention__list__5col:nth-child(n+0):nth-child(-n+5) {
+    border-bottom: 1px #ededed solid;
+  }
+
+  .p-attention__list__5col:nth-child(n+0):nth-child(-n+4) {
+    border-right: 1px #ededed solid;
+  }
+
+  .p-attention__list__5col:nth-child(n+6):nth-child(-n+9) {
+    border-right: 1px #ededed solid;
+  }
+}
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .p-attention__list:nth-child(1) .p-attention__list__5col {
+    border-bottom: 1px #ededed solid;
+  }
+  .p-attention__list:nth-child(1) .p-attention__list__5col:nth-child(odd) {
+    border-right: 1px #ededed solid;
+  }
+
+  .p-attention__list:nth-child(2) .p-attention__list__5col:nth-child(even) {
+    border-right: 1px #ededed solid;
+  }
+  .p-attention__list:nth-child(2) .p-attention__list__5col:nth-child(n+0):nth-child(-n+3) {
+    border-bottom: 1px #ededed solid;
+  }
+}
 /*
 ========================================================
 	- p-access
@@ -1526,6 +1648,11 @@ html {
   padding-bottom: 20px;
   position: relative;
 }
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .c-heading.is-design {
+    font-size: 40px;
+  }
+}
 
 .c-heading.is-design:after {
   content: "";
@@ -1543,6 +1670,11 @@ html {
   border-radius: 2px;
   /*線の丸み*/
 }
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .c-heading.is-design:after {
+    left: 0;
+  }
+}
 
 /*plan*/
 .c-heading.is-plan {
@@ -1550,6 +1682,11 @@ html {
   display: inline-block;
   padding-bottom: 20px;
   position: relative;
+}
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .c-heading.is-plan {
+    font-size: 40px;
+  }
 }
 
 .c-heading.is-plan:before {
@@ -1568,6 +1705,13 @@ html {
   border-radius: 2px;
   /*線の丸み*/
 }
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .c-heading.is-plan:before {
+    left: 25%;
+    top: 80px;
+    /*線の上下位置*/
+  }
+}
 
 /*finance*/
 .c-heading.is-finance {
@@ -1576,7 +1720,30 @@ html {
   padding-bottom: 20px;
   position: relative;
 }
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .c-heading.is-finance {
+    font-size: 40px;
+  }
+}
 
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .c-heading.is-plan:before {
+    content: "";
+    position: absolute;
+    left: 25%;
+    top: 80px;
+    /*線の上下位置*/
+    display: inline-block;
+    width: 50%;
+    /*線の長さ*/
+    height: 1px;
+    /*線の太さ*/
+    background-color: #CBCBCB;
+    /*線の色*/
+    border-radius: 2px;
+    /*線の丸み*/
+  }
+}
 .c-heading.is-finance:after {
   content: "";
   position: absolute;
@@ -1603,19 +1770,40 @@ html {
   font-weight: bold;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .c-heading__sub.is-finance {
+    margin: 40px auto 20px auto;
+    font-size: 24px;
+  }
+}
 
 /*flow*/
 .c-heading.is-flow {
   font-size: 34px;
+}
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .c-heading.is-flow {
+    font-size: 26px;
+  }
 }
 .c-heading.is-flow strong {
   font-family: "小塚明朝 Pro", "Kozuka Mincyo Pro", serif;
   color: #252a6d;
   font-size: 46px;
 }
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .c-heading.is-flow strong {
+    font-size: 36px;
+  }
+}
 
 .c-heading__sub.is-flow {
   font-size: 27px;
+}
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .c-heading__sub.is-flow {
+    font-size: 18px;
+  }
 }
 
 /*access*/
@@ -1866,6 +2054,12 @@ html {
 */
 .slider {
   width: 80vw;
+  position: relative;
+}
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .slider {
+    width: 90vw;
+  }
 }
 
 .slider img {
@@ -1879,12 +2073,27 @@ html {
   border-right: 10px solid blue;
   border-top: 10px solid #333;
 }
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .prev-arrow {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+  }
+}
 
 .next-arrow {
   border-bottom: 10px solid #333;
   border-left: 10px solid red;
   border-right: 0;
   border-top: 10px solid #333;
+  border-top: 10px solid #333;
+}
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .next-arrow {
+    position: absolute;
+    bottom: -50px;
+    left: 50px;
+  }
 }
 
 button {
@@ -1971,9 +2180,19 @@ button {
   font-size: 27px;
   margin: 20px auto;
 }
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .c-text__summary.is-design {
+    font-size: 20px;
+  }
+}
 
 .c-text__detail.is-design {
   font-size: 19px;
+}
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .c-text__detail.is-design {
+    font-size: 16px;
+  }
 }
 
 /*finance*/
@@ -2007,6 +2226,11 @@ button {
   border-bottom: 1px #fff solid;
   padding: 20px 0px 10px 0px;
 }
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .c-text__summary.is-flowChart {
+    font-size: 16px;
+  }
+}
 
 .c-text__detail.is-flowChart {
   color: #fff;
@@ -2014,20 +2238,41 @@ button {
   font-style: normal;
   padding-top: 10px;
 }
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .c-text__detail.is-flowChart {
+    font-size: 14px;
+  }
+}
 
 /*attention*/
 .c-text__summary.is-attentionBox {
   color: #fff;
   font-size: 32px;
 }
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .c-text__summary.is-attentionBox {
+    font-size: 20px;
+  }
+}
 
 .c-text__detail.is-attentionBox {
   color: #fff;
   font-size: 18px;
 }
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .c-text__detail.is-attentionBox {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+}
 
 .c-text__caption.is-attentionList {
   font-size: 14px;
+}
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .c-text__caption.is-attentionList {
+    font-size: 12px;
+  }
 }
 
 /*
@@ -2045,6 +2290,11 @@ button {
   border-bottom: solid 1px #cbcbcb;
   display: inline-block;
 }
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .c-list.is-plan dl {
+    width: 90%;
+  }
+}
 .c-list.is-plan dl dt {
   /*左に寄せる*/
   text-align: left;
@@ -2056,7 +2306,7 @@ button {
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .c-list.is-plan dl dt {
-    width: 30%;
+    width: 25%;
   }
 }
 .c-list.is-plan dl dd {
@@ -2065,8 +2315,9 @@ button {
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .c-list.is-plan dl dd {
-    width: 60%;
+    width: 65%;
     text-align: left;
+    font-size: 14px;
   }
 }
 .c-list.is-plan dl dd .is-tag {
@@ -2107,7 +2358,7 @@ button {
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .c-list.is-finance dl dt {
-    width: 30%;
+    width: 32%;
   }
 }
 .c-list.is-finance dl dt:after {
@@ -2163,4 +2414,15 @@ button {
 }
 .c-list.is-access dl dd span {
   font-size: 12px;
+}
+
+/*
+========================================================
+	- c-youtube
+========================================================
+*/
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .c-youtube iframe {
+    width: 100%;
+  }
 }

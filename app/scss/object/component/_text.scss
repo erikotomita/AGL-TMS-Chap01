@@ -57,9 +57,16 @@
 .c-text__summary.is-design{
    font-size: 27px;
    margin:20px auto;
+   @include media-query('s') {
+      font-size: 20px;
+   }
+
 }
 .c-text__detail.is-design{
     font-size: 19px;
+    @include media-query('s') {
+       font-size: 16px;
+    }
 }
 /*finance*/
 .c-text__finance__subTitle{
@@ -88,23 +95,42 @@ display: block;
     font-style: normal;
     border-bottom: 1px #fff solid;
     padding: 20px 0px 10px 0px;
+    @include media-query('s') {
+       font-size: 16px;
+    }
 }
 .c-text__detail.is-flowChart{
   color: #fff;
     font-size: 16px;
     font-style: normal;
     padding-top:10px;
+    @include media-query('s') {
+       font-size: 14px;
+    }
 }
 
 /*attention*/
 .c-text__summary.is-attentionBox{
   color: #fff;
   font-size: 32px;
+  @include media-query('s') {
+   font-size: 20px;
+
+  }
+
 }
 .c-text__detail.is-attentionBox{
   color: #fff;
   font-size: 18px;
+
+  @include media-query('s') {
+     margin-top:20px;
+   font-size: 14px;
+  }
 }
 .c-text__caption.is-attentionList{
   font-size: 14px;
+  @include media-query('s') {
+   font-size: 12px;
+  }
 }

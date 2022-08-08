@@ -12,40 +12,59 @@
 }
 .p-flow__chart{
   margin: 70px 0px 70px 0px;
+  @include media-query('s') {
+    margin: 70px 0px 0px 0px;
+  }
+}
+@include media-query('s') {
+  .p-flow{
+    padding-bottom: 0px;
+     .p-flow__chart{
+      margin-bottom: 0px;
+    }
+  }
 }
 .p-flow__chart__list{
   width: 95%;
   margin: 0 auto;
-.p-flow__chart__list__box{
-    i{
-        position: relative;
-        display: inline-block;
-        float: left;
-        text-align: center;
-        width: calc(calc(100% / 5) - 50px);
-        margin:0px 20px 0px 20px;
-        padding: 50px 20px;
-        height: 242px;
-        .p-flow__chart__list__box__img{
-            height:27px;
+  .p-flow__chart__list__box{
+      i{
+          position: relative;
+          display: inline-block;
+          float: left;
+          text-align: center;
+          width: calc(calc(100% / 5) - 50px);
+          margin:0px 20px 0px 20px;
+          padding: 50px 20px;
+          height: 242px;
+          .p-flow__chart__list__box__img{
+              height:27px;
+          }
+          background-color: $darkgray_color;
         }
-        background-color: $darkgray_color;
+        i:first-child {
+          background-color: $deepbrack_color;
+        }
+        i:last-child {
+          background-color: $bluegray_color;
+        }
+        i:nth-child(n+0):nth-child(-n+4):after{
+          content: "";
+            position: absolute;
+            top: 50%;   /* 縦軸をセンタリングする */
+            right: -35px;
+            transform: translateY(-50%);   /* 縦軸をセンタリングする */
+            border: 8px solid transparent;
+            border-left: 12px solid $deepbrack_color;   /* 好みで色を変えてください */
+        }
 
-      }
-      i:first-child {
-      background-color: $deepbrack_color;
-      }
-      i:last-child {
-      background-color: $bluegray_color;
-      }
-      i:nth-child(n+0):nth-child(-n+4):after{
-        content: "";
-          position: absolute;
-          top: 50%;   /* 縦軸をセンタリングする */
-          right: -35px;
-          transform: translateY(-50%);   /* 縦軸をセンタリングする */
-          border: 8px solid transparent;
-          border-left: 12px solid $deepbrack_color;   /* 好みで色を変えてください */
-      }
+        @include media-query('s') {
+            i{
+                width: calc(calc(100% / 2) - 50px);
+                  margin:0px 20px 20px 20px;
+                  padding: 30px 10px;
+                  height: auto;
+            }
+        }
     }
 }

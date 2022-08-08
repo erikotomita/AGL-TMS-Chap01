@@ -22,7 +22,10 @@
   height: 400px;
   vertical-align: bottom;
   position: relative;
-
+  @include media-query('s') {
+  width: 90%;
+  margin-bottom: 40px;
+  }
 }
 .p-finance__2col__right{
   position: absolute;
@@ -31,8 +34,10 @@
 .p-finance__2col__left{
    text-align: left;
    position: absolute;
-   top: 20%;
-   left: 20%;
+   top:50%;
+   left:65%;
+   transform:translate(-50%,-50%);
+   width:100%;
 }
 
 .p-finance__2col__left:after{

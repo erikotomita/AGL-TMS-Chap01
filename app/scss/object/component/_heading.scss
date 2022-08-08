@@ -94,6 +94,9 @@
   display:inline-block;
   padding-bottom: 20px;
   position: relative;
+  @include media-query('s') {
+   font-size: 40px;
+  }
 }
 
 .c-heading.is-design:after{
@@ -106,6 +109,10 @@
   height: 1px;/*線の太さ*/
   background-color: #CBCBCB;/*線の色*/
   border-radius: 2px;/*線の丸み*/
+
+  @include media-query('s') {
+     left: 0;
+  }
 }
 
 
@@ -116,6 +123,9 @@
   display:inline-block;
   padding-bottom: 20px;
   position: relative;
+  @include media-query('s') {
+   font-size: 40px;
+  }
 }
 .c-heading.is-plan:before{
   content: '';
@@ -127,6 +137,10 @@
   height: 1px;/*線の太さ*/
   background-color: #CBCBCB;/*線の色*/
   border-radius: 2px;/*線の丸み*/
+  @include media-query('s') {
+    left: 25%;
+    top: 80px;/*線の上下位置*/
+  }
 }
 
 /*finance*/
@@ -135,6 +149,22 @@
   display:inline-block;
   padding-bottom: 20px;
   position: relative;
+  @include media-query('s') {
+   font-size: 40px;
+  }
+}
+@include media-query('s') {
+  .c-heading.is-plan:before{
+    content: '';
+    position: absolute;
+    left: 25%;
+    top: 80px;/*線の上下位置*/
+    display: inline-block;
+    width: 50%;/*線の長さ*/
+    height: 1px;/*線の太さ*/
+    background-color: #CBCBCB;/*線の色*/
+    border-radius: 2px;/*線の丸み*/
+  }
 }
 .c-heading.is-finance:after{
   content: '';
@@ -155,19 +185,33 @@
   color:#fff;
   font-weight: bold;
   margin-bottom: 20px;
+  @include media-query('s') {
+    margin: 40px auto 20px auto;
+   font-size: 24px;
+  }
 }
 
 /*flow*/
 .c-heading.is-flow{
   font-size: 34px;
+  @include media-query('s') {
+   font-size: 26px;
+  }
   strong{
     font-family:  $kozukaMincyo_font;
     color:$blue_color;
     font-size: 46px;
+    @include media-query('s') {
+     font-size: 36px;
+    }
   }
+
 }
 .c-heading__sub.is-flow{
   font-size: 27px;
+  @include media-query('s') {
+   font-size: 18px;
+  }
 }
 
 /*access*/

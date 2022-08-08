@@ -5,6 +5,10 @@
 */
 .slider{
   width: 80vw;
+  @include media-query('s') {
+   width: 90vw;
+  }
+  position: relative;
 }
 .slider img{
   height: auto;
@@ -15,12 +19,24 @@
   border-left: 0;
   border-right: 10px solid blue;
   border-top: 10px solid  #333;
+  @include media-query('s') {
+  position: absolute;
+  bottom:-50px;
+  left:0;
+  }
 }
 .next-arrow {
   border-bottom: 10px solid  #333;
   border-left: 10px solid red;
   border-right: 0;
   border-top: 10px solid  #333;
+  @include media-query('s') {
+      position: absolute;
+    bottom:-50px;
+    left:50px;
+  }
+  border-top: 10px solid  #333;
+
 }
 button {
   -webkit-appearance: none;
