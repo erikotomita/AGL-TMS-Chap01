@@ -14,4 +14,13 @@
   }
   border-top: 2px solid $primary;
   border-bottom: 2px solid $primary;
+
+    @include media-query('s') {
+      width: 90%;
+      border: 1px solid $primary;
+      padding: 5vh 0px;
+      span{
+        font-size: 40px;
+      }
+    }
 }

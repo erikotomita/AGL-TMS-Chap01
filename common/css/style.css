@@ -826,6 +826,9 @@ html {
 .l-wrapper {
   width: 100%;
   background-color: #fff;
+}
+
+.l-bg__wrapper {
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.1%, #c7c7c7), color-stop(0.1%, transparent)), -webkit-gradient(linear, right top, left top, color-stop(0.1%, #c7c7c7), color-stop(0.1%, transparent));
   background-image: linear-gradient(0deg, #c7c7c7 0.1%, transparent 0.1%), linear-gradient(-90deg, #c7c7c7 0.1%, transparent 0.1%);
   background-size: 385px 710px;
@@ -1099,22 +1102,28 @@ html {
 }
 
 .p-present:before {
+  content: "";
+  /*何も入れない*/
+  display: inline-block;
+  /*忘れずに！*/
+  background-image: url(../img/SVG/present!.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 45%;
+  /*画像の高さ*/
+  height: 45%;
+  /*画像の高さ*/
+  right: -270px;
+  top: -50px;
   z-index: -1;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .p-present:before {
-    content: "";
-    /*何も入れない*/
-    display: inline-block;
-    /*忘れずに！*/
     width: 35%;
     /*画像の高さ*/
     height: 35%;
     /*画像の高さ*/
-    background-image: url(../img/SVG/present!.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
     right: 40px;
     top: 60px;
   }
@@ -1135,7 +1144,7 @@ html {
 
 .p-design__background {
   position: absolute;
-  top: 50vh;
+  top: 40vh;
   width: 70%;
   height: 50%;
   right: 0;
@@ -1482,6 +1491,12 @@ html {
   display: inline-block;
   float: left;
 }
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .p-access__2col {
+    width: 100%;
+    height: 50vh;
+  }
+}
 
 .p-access__2col.is-right {
   background-color: #ededed;
@@ -1494,6 +1509,11 @@ html {
   -webkit-transform: translateY(-50%) translateX(-50%);
           transform: translateY(-50%) translateX(-50%);
   text-align: center;
+}
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .p-access__2col.is-right .p-access__contents {
+    width: 90%;
+  }
 }
 .p-access__2col.is-right h3 {
   margin-bottom: 40px;
@@ -1515,6 +1535,16 @@ html {
 .p-contact span {
   font-size: 47px;
 }
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .p-contact {
+    width: 90%;
+    border: 1px solid #000000;
+    padding: 5vh 0px;
+  }
+  .p-contact span {
+    font-size: 40px;
+  }
+}
 
 /*
 ========================================================
@@ -1529,6 +1559,11 @@ html {
 }
 .p-footer img {
   height: 78px;
+}
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .p-footer img {
+    height: 60px;
+  }
 }
 
 /*
@@ -1657,7 +1692,7 @@ html {
 .c-heading.is-design:after {
   content: "";
   position: absolute;
-  left: 50;
+  left: 0;
   bottom: 0;
   /*線の上下位置*/
   display: inline-block;
@@ -1813,6 +1848,11 @@ html {
   padding-bottom: 20px;
   position: relative;
 }
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .c-heading__sub.is-access {
+    font-size: 40px;
+  }
+}
 
 .c-heading__sub.is-access:after {
   content: "";
@@ -1833,6 +1873,11 @@ html {
   display: block;
   font-size: 28px;
   margin-top: 20px;
+}
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .c-heading.is-access {
+    font-size: 20px;
+  }
 }
 
 /*
@@ -2067,32 +2112,44 @@ html {
   width: 100%;
 }
 
+.btnStyle, .next-arrow, .prev-arrow {
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80% auto;
+  width: 53px;
+  height: 53px;
+}
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .btnStyle, .next-arrow, .prev-arrow {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .prev-arrow {
-  border-bottom: 10px solid #333;
-  border-left: 0;
-  border-right: 10px solid blue;
-  border-top: 10px solid #333;
+  background-image: url(../img/SVG/prevArrow.svg);
+  position: absolute;
+  right: 70px;
+  bottom: -90px;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .prev-arrow {
-    position: absolute;
-    bottom: -50px;
-    left: 0;
+    right: 55px;
+    bottom: -55px;
   }
 }
 
 .next-arrow {
-  border-bottom: 10px solid #333;
-  border-left: 10px solid red;
-  border-right: 0;
-  border-top: 10px solid #333;
-  border-top: 10px solid #333;
+  background-image: url(../img/SVG/nextArrow.svg);
+  position: absolute;
+  right: 0px;
+  bottom: -90px;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .next-arrow {
-    position: absolute;
-    bottom: -50px;
-    left: 50px;
+    right: 0px;
+    bottom: -55px;
   }
 }
 
@@ -2395,25 +2452,33 @@ button {
   background-color: #565f64;
   color: #fff;
 }
-@media screen and (max-width: 576px) and (orientation: portrait) {
-  .c-list.is-access dl dt {
-    width: 30%;
-  }
-}
 .c-list.is-access dl dd {
   width: 60%;
   text-align: left;
   float: left;
   margin-left: 1em;
 }
-@media screen and (max-width: 576px) and (orientation: portrait) {
-  .c-list.is-access dl dd {
-    width: 60%;
-    text-align: left;
-  }
-}
 .c-list.is-access dl dd span {
   font-size: 12px;
+}
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .c-list.is-access {
+    font-size: 17px;
+  }
+  .c-list.is-access dl {
+    width: 100%;
+    padding: 0em 0px 0em 0em;
+  }
+  .c-list.is-access dl dt {
+    width: 22%;
+  }
+  .c-list.is-access dl dd {
+    text-align: left;
+    width: 70%;
+  }
+  .c-list.is-access dl dd span {
+    font-size: 10px;
+  }
 }
 
 /*

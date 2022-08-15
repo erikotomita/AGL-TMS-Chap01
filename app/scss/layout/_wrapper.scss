@@ -1,9 +1,11 @@
 .l-wrapper{
   width:100%;
   background-color: #fff;
-	background-image:
-  linear-gradient(-0deg, #c7c7c7 0.1%, transparent 0.1%),
-	linear-gradient(-90deg, #c7c7c7 0.1%, transparent 0.1%);
-	background-size: 385px 710px;
+}
 
+.l-bg__wrapper{
+  background-image:
+  linear-gradient(-0deg, #c7c7c7 0.1%, transparent 0.1%),
+  linear-gradient(-90deg, #c7c7c7 0.1%, transparent 0.1%);
+  background-size: 385px 710px;
 }

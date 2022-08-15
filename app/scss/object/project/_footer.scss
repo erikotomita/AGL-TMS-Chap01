@@ -12,4 +12,9 @@
  img{
    height: 78px;
  }
+   @include media-query('s') {
+     img{
+       height: 60px;
+     }
+   }
 }

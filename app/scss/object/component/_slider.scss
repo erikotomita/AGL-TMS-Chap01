@@ -12,32 +12,44 @@
 }
 .slider img{
   height: auto;
-  width: 100%;}
+  width: 100%;
+}
 
-.prev-arrow {
-  border-bottom: 10px solid  #333;
-  border-left: 0;
-  border-right: 10px solid blue;
-  border-top: 10px solid  #333;
+.btnStyle{
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80% auto;
+  width:53px;
+  height:53px;
   @include media-query('s') {
+    width:40px;
+    height:40px;
+  }
+}
+.prev-arrow{
+  @extend .btnStyle;
+    background-image: url(../img/SVG/prevArrow.svg);
+    position: absolute;
+    right:70px;
+    bottom:-90px;
+    @include media-query('s') {
+      right:55px;
+      bottom:-55px;
+    }
+}
+.next-arrow{
+  @extend .btnStyle;
+  background-image: url(../img/SVG/nextArrow.svg);
   position: absolute;
-  bottom:-50px;
-  left:0;
-  }
-}
-.next-arrow {
-  border-bottom: 10px solid  #333;
-  border-left: 10px solid red;
-  border-right: 0;
-  border-top: 10px solid  #333;
+  right:0px;
+  bottom:-90px;
   @include media-query('s') {
-      position: absolute;
-    bottom:-50px;
-    left:50px;
+    right:0px;
+    bottom:-55px;
   }
-  border-top: 10px solid  #333;
-
 }
+
 button {
   -webkit-appearance: none;
   -moz-appearance: none;

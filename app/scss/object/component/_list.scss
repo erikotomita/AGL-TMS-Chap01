@@ -109,23 +109,36 @@
     	    margin-right: 0.5em ;
           background-color: $darkgray_color;
           color: #fff;
-          @include media-query('s') {
-            width: 30%;
-          }
         }
     dd {
           width:60%;
           text-align: left;
     	    float: left;
     	    margin-left: 1em ;
-          @include media-query('s') {
-            width: 60%;
-            text-align: left;
-          }
           span{
             font-size: 12px;
           }
 
     }
   }
+
+  @include media-query('s') {
+    font-size: 17px;
+
+    dl{
+       width:100%;
+  padding: 0em 0px 0em 0em;
+       dt {
+         width:22%;
+       }
+       dd{
+         text-align: left;
+           width:70%;
+           span{
+             font-size: 10px;
+           }
+       }
+    }
+  }
+
 }

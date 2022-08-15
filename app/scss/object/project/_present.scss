@@ -19,15 +19,19 @@
 }
 
 .p-present:before{
-    @include media-query('s') {
-      content: '';/*何も入れない*/
-      display: inline-block;/*忘れずに！*/
+  content: '';/*何も入れない*/
+  display: inline-block;/*忘れずに！*/
+  background-image: url(../img/SVG/present!.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 45%;/*画像の高さ*/
+  height: 45%;/*画像の高さ*/
+  right:-270px;
+  top:-50px;
+  @include media-query('s') {
       width: 35%;/*画像の高さ*/
       height: 35%;/*画像の高さ*/
-      background-image: url(../img/SVG/present!.svg);
-      background-size: contain;
-      background-repeat: no-repeat;
-      position: absolute;
       right:40px;
       top:60px;
   }
