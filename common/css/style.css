@@ -1261,12 +1261,9 @@ html {
 
 .p-finance__2col__left {
   text-align: left;
-  position: absolute;
-  top: 50%;
-  left: 65%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  height: 100%;
   width: 100%;
+  padding: 78px;
 }
 
 .p-finance__2col__left:after {
@@ -1358,7 +1355,7 @@ html {
 .p-attention {
   width: 100%;
   margin: 0 auto;
-  padding: 88px 0px 69px 0px;
+  padding: 0px 0px 69px 0px;
   text-align: center;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
@@ -1369,11 +1366,11 @@ html {
 }
 
 .p-attention__box {
-  width: 67%;
-  margin: 0 auto 30px;
+  width: 74%;
+  margin: 0 auto;
   background-color: #231815;
   text-align: left;
-  padding: 40px 60px;
+  padding: 40px 40px;
 }
 .p-attention__box h3 {
   background-color: #fff;
@@ -1386,7 +1383,6 @@ html {
   .p-attention__box {
     width: 100%;
     text-align: center;
-    margin-bottom: 0px;
   }
   .p-attention__box h3 {
     display: block;
@@ -1398,7 +1394,7 @@ html {
 }
 
 .p-attention__list {
-  width: 64%;
+  width: 100%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1426,16 +1422,20 @@ html {
   }
 }
 
+.p-attention__list__container {
+  border: 1px #ededed solid;
+  padding: 30px;
+  width: 74%;
+  margin: 0 auto;
+}
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .p-attention__list__container {
     width: 100%;
-    border: 1px #ededed solid;
-    padding: 30px;
   }
 }
 
 @media screen and (min-width: 993px) {
-  .p-attention__list__5col:nth-child(n+0):nth-child(-n+5) {
+  .p-attention__list:nth-child(1) .p-attention__list__5col {
     border-bottom: 1px #ededed solid;
   }
 
@@ -1448,7 +1448,7 @@ html {
   }
 }
 @media screen and (min-width: 577px) {
-  .p-attention__list__5col:nth-child(n+0):nth-child(-n+5) {
+  .p-attention__list:nth-child(1) .p-attention__list__5col {
     border-bottom: 1px #ededed solid;
   }
 
@@ -2244,7 +2244,7 @@ button {
 }
 
 .c-text__detail.is-design {
-  font-size: 19px;
+  font-size: 18px;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .c-text__detail.is-design {
@@ -2315,6 +2315,7 @@ button {
 .c-text__detail.is-attentionBox {
   color: #fff;
   font-size: 18px;
+  margin-top: 20px;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .c-text__detail.is-attentionBox {
@@ -2418,17 +2419,47 @@ button {
     width: 32%;
   }
 }
-.c-list.is-finance dl dt:after {
-  /*border-bottom: 3px dotted $primary;*/
-  content: "・・・・・・・・・・・・・・・・";
-  position: absolute;
-  top: 0%;
-}
 .c-list.is-finance dl dd {
   float: right;
   text-align: right;
   margin-left: 1em;
   background-color: #fff;
+}
+.c-list.is-finance dl:nth-child(1) dt:after {
+  /*border-bottom: 3px dotted $primary;*/
+  content: "・・・・・・・・・・・";
+  position: absolute;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  top: 0%;
+  left: 75px;
+}
+.c-list.is-finance dl:nth-child(2) dt:after {
+  /*border-bottom: 3px dotted $primary;*/
+  content: "・・・・・・・・・・・";
+  position: absolute;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  top: 0%;
+  left: 115px;
+}
+.c-list.is-finance dl:nth-child(3) dt:after {
+  /*border-bottom: 3px dotted $primary;*/
+  content: "・・・・・・・・・・・";
+  position: absolute;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  top: 0%;
+  left: 95px;
+}
+.c-list.is-finance dl:nth-child(4) dt:after {
+  /*border-bottom: 3px dotted $primary;*/
+  content: "・・・・・・・・・・・・・・";
+  position: absolute;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  top: 0%;
+  left: 65px;
 }
 
 /*plan*/

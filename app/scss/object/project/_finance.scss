@@ -32,12 +32,11 @@
   top: 20%;
 }
 .p-finance__2col__left{
-   text-align: left;
-   position: absolute;
-   top:50%;
-   left:65%;
-   transform:translate(-50%,-50%);
-   width:100%;
+    text-align: left;
+    height: 100%;
+    width:100%;
+    padding: 78px;
+
 }
 
 .p-finance__2col__left:after{

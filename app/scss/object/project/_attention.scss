@@ -7,7 +7,7 @@
 .p-attention{
   width: 100%;
   margin: 0 auto;
-  padding: 88px 0px 69px 0px;
+  padding: 0px 0px 69px 0px;
   text-align: center;
   @include media-query('s') {
     width: 90%;
@@ -15,11 +15,11 @@
   }
 }
 .p-attention__box{
-  width: 67%;
-  margin: 0 auto 30px;
+  width: 74%;
+  margin: 0 auto ;
   background-color: $deepbrack_color;
   text-align: left;
-  padding: 40px 60px;
+  padding: 40px 40px;
   h3{
       background-color: #fff;
       border-radius: 40px;
@@ -30,7 +30,6 @@
   @include media-query('s') {
     width: 100%;
     text-align: center;
-    margin-bottom:0px;
     h3{
         display: block;
         width: 50%;
@@ -43,7 +42,7 @@
 
 
 .p-attention__list{
-  width: 64%;
+  width: 100%;
   margin: auto;
   display: flex;
   .p-attention__list__5col{
@@ -68,15 +67,20 @@
   }
 }
 .p-attention__list__container{
+  border: 1px $lightgray_color solid;
+  padding: 30px;
+  width: 74%;
+  margin: 0 auto;
   @include media-query('s') {
     width: 100%;
-    border: 1px $lightgray_color solid;
-    padding: 30px;
+
   }
 }
 @include media-query('l') {
-  .p-attention__list__5col:nth-child(n+0):nth-child(-n+5){
-    border-bottom: 1px $lightgray_color solid;
+  .p-attention__list:nth-child(1){
+    .p-attention__list__5col{
+      border-bottom: 1px $lightgray_color solid;
+    }
   }
   .p-attention__list__5col:nth-child(n+0):nth-child(-n+4){
     border-right: 1px $lightgray_color solid;
@@ -86,8 +90,10 @@
   }
 }
 @include media-query('m') {
-  .p-attention__list__5col:nth-child(n+0):nth-child(-n+5){
-    border-bottom: 1px $lightgray_color solid;
+  .p-attention__list:nth-child(1){
+    .p-attention__list__5col{
+      border-bottom: 1px $lightgray_color solid;
+    }
   }
   .p-attention__list__5col:nth-child(n+0):nth-child(-n+4){
     border-right: 1px $lightgray_color solid;

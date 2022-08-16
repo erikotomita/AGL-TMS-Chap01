@@ -75,19 +75,58 @@
             width: 32%;
           }
         }
-        dt:after {
-          /*border-bottom: 3px dotted $primary;*/
-        content: '・・・・・・・・・・・・・・・・';
-          position: absolute;
-          top: 0%;
-        }
+
     dd {
     	    float: right ;
           text-align: right;
     	    margin-left: 1em ;
           background-color: #fff;
     }
+  }
 
+  dl:nth-child(1){
+    dt:after {
+      /*border-bottom: 3px dotted $primary;*/
+    content: '・・・・・・・・・・・';
+      position: absolute;
+      font-size: 18px;
+      letter-spacing: 0.08em;
+      top: 0%;
+      left:75px;
+    }
+  }
+  dl:nth-child(2){
+    dt:after {
+      /*border-bottom: 3px dotted $primary;*/
+    content: '・・・・・・・・・・・';
+      position: absolute;
+      font-size: 18px;
+      letter-spacing: 0.08em;
+      top: 0%;
+      left:115px;
+    }
+  }
+  dl:nth-child(3){
+    dt:after {
+      /*border-bottom: 3px dotted $primary;*/
+    content: '・・・・・・・・・・・';
+      position: absolute;
+      font-size: 18px;
+      letter-spacing: 0.08em;
+      top: 0%;
+      left:95px;
+    }
+  }
+  dl:nth-child(4){
+    dt:after {
+      /*border-bottom: 3px dotted $primary;*/
+    content: '・・・・・・・・・・・・・・';
+      position: absolute;
+      font-size: 18px;
+      letter-spacing: 0.08em;
+      top: 0%;
+      left:65px;
+    }
   }
 }
 
