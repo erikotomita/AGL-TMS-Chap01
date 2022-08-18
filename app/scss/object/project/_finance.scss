@@ -32,15 +32,27 @@
   top: 20%;
 }
 .p-finance__2col__left{
-    text-align: left;
-    height: 100%;
-    width:100%;
-    padding: 78px;
+  width:383px;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+   div{
+     text-align: left;
+   }
 
 }
 
 .p-finance__2col__left:after{
-  content: url('../img/SVG/atamakin.svg');
+  content: '';/*何も入れない*/
+  display: inline-block;/*忘れずに！*/
+  background-image: url(../img/SVG/atamakin.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
   position: absolute;
-  top:0px;
+  width: 100%;/*画像の高さ*/
+  height: 100%;/*画像の高さ*/
+  right:-320px;
+  top:-150px;
 }
