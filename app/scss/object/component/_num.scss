@@ -9,8 +9,9 @@
   font-size: 24px;
   color:#c7c7c7;
   position: absolute;
-  top:84px;
-  left:84px;
+  letter-spacing: 0.3em;
+  top:94px;
+  left:114px;
 }
 .c-num.is-case.is-2nd{
     @include media-query('s') {
@@ -26,9 +27,9 @@
     font-weight: bold;
     background: url('../img/SVG/merit.svg') no-repeat  ;
     display: block;
-    height: 89px;
-    width:111px;
-    padding:15px 10px;
+    height: 110px;
+    width:140px;
+    padding:30px 20px;
 
 	}
 /*
