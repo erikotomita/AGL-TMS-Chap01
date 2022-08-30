@@ -842,7 +842,7 @@ html {
 .p-case {
   width: 100%;
   margin: 0 auto;
-  padding: 88px 24px 69px 24px;
+  padding: 76px 24px 69px 24px;
   text-align: center;
 }
 
@@ -870,6 +870,7 @@ html {
 .p-case__contents {
   width: 100%;
   margin-top: 45px;
+  padding: 0 155px;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .p-case__contents {
@@ -882,7 +883,7 @@ html {
   vertical-align: middle;
   background-repeat: no-repeat;
   background-size: 48%;
-  width: 29%;
+  width: 30%;
   height: 306px;
   text-align: left;
   position: relative;
@@ -915,41 +916,58 @@ html {
 */
 .p-merit {
   width: 100%;
-  padding: 58px 0px 69px 0px;
+  padding: 58px 0px 0px 0px;
   text-align: center;
 }
 
 .p-merit__contents {
   width: 100%;
   margin: 0 auto;
-  padding: 58px 8vw;
+  padding: 58px 12vw 0px 12vw;
 }
-@media screen and (min-width: 993px) {
-  .p-merit__contents {
-    min-width: 1210px;
-  }
-  .p-merit__contents .p-merit__contents__box__description {
-    min-width: 590px;
-    display: inline-block;
-  }
-  .p-merit__contents .p-merit__img {
-    width: 45%;
-    display: inline-block;
-    position: relative;
-    top: -100px;
-  }
+.p-merit__contents .p-merit__contents__box__description {
+  width: 50%;
+  display: inline-block;
+  margin-bottom: 150px;
 }
-@media screen and (min-width: 577px) {
-  .p-merit__contents {
-    width: 100%;
-  }
+.p-merit__contents .p-merit__contents__box__description:nth-child(4) {
+  margin-bottom: 90px;
+}
+.p-merit__contents .p-merit__contents__box__description:nth-child(5) {
+  margin-bottom: 125px;
+}
+.p-merit__contents .p-merit__img {
+  width: 36%;
+  display: inline-block;
+  position: relative;
+}
+.p-merit__contents .p-merit__img img {
+  width: 100%;
+  position: absolute;
+  top: -260px;
+  left: -20px;
+}
+.p-merit__contents .p-merit__img:nth-child(3) {
+  margin-left: 150px;
+}
+.p-merit__contents .p-merit__img:nth-child(3) img {
+  position: absolute;
+  top: -320px;
+  left: -20px;
+}
+.p-merit__contents .p-merit__contents__box__description {
+  text-align: left;
+  position: relative;
+  padding: 105px 50px 0px 130px;
+}
+.p-merit__contents .p-merit__contents__box__description span {
+  position: absolute;
+  top: -10px;
+  left: 45px;
+}
+@media screen and (max-width: 576px) and (orientation: portrait) {
   .p-merit__contents .p-merit__contents__box__description {
-    width: 50%;
-    display: inline-block;
-  }
-  .p-merit__contents .p-merit__img {
-    width: 40%;
-    display: inline-block;
+    padding: 50px 10px 0px 50px;
   }
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
@@ -999,29 +1017,13 @@ html {
   }
 }
 
-.p-merit__contents__box__description {
-  text-align: left;
-  position: relative;
-  padding: 95px 0px 0px 160px;
-}
-.p-merit__contents__box__description span {
-  position: absolute;
-  top: -10px;
-  left: 70px;
-}
-@media screen and (max-width: 576px) and (orientation: portrait) {
-  .p-merit__contents__box__description {
-    padding: 50px 10px 0px 50px;
-  }
-}
-
 /*
 ========================================================
 	- p-recommend
 ========================================================
 */
 .p-recommend {
-  margin: 100px 1vw 0px 1vw;
+  margin: 100px 4vw 0px 4vw;
   background-color: #ededed;
   position: relative;
 }
@@ -1038,7 +1040,7 @@ html {
     display: block;
     position: absolute;
     top: -150px;
-    left: calc(0px + 10%);
+    left: calc(0px + 12%);
     height: 302px;
   }
 }
@@ -1061,7 +1063,7 @@ html {
 }
 .p-recommend__contents {
   width: 100%;
-  padding: 145px 70px 70px 70px;
+  padding: 165px 70px 70px 70px;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .p-recommend__contents {
@@ -1076,7 +1078,7 @@ html {
   margin: 0px 10px 0px 10px;
   background-color: #fff;
   padding: 20px;
-  height: 490px;
+  height: 530px;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .p-recommend__4col {
@@ -1640,8 +1642,8 @@ html {
 .c-heading.is-recommend {
   font-size: 34px;
   position: absolute;
-  top: 1%;
-  right: 0;
+  top: 8%;
+  right: 70px;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .c-heading.is-recommend {
@@ -1660,10 +1662,10 @@ html {
 }
 
 .c-heading__sub.is-recommend {
-  font-size: 82px;
+  font-size: 88px;
   position: absolute;
-  top: -15%;
-  right: 0;
+  top: -10%;
+  right: 70px;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .c-heading__sub.is-recommend {
@@ -1912,17 +1914,19 @@ html {
 }
 
 .c-mainV__inner {
-  height: 100vh;
+  width: 100vw;
+  height: 92vh;
   background-image: url("../img/1x/mainvisual-100.jpg");
   /* 画像を常に天地左右の中央に配置 */
   background-position: center center;
   /* 画像をタイル状に繰り返し表示しない */
   background-repeat: no-repeat;
-  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
-  background-attachment: fixed;
+  /* コンテンツの高さが画像の高さより大きい時、動かないように固定
+  background-attachment: fixed;*/
   /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
   background-size: cover;
   position: relative;
+  background-size: 100% 100%;
 }
 
 .c-mainV__contents {

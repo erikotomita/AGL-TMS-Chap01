@@ -6,39 +6,61 @@
 
 .p-merit{
   width: 100%;
-  padding: 58px 0px 69px 0px;
+  padding: 58px 0px 0px 0px;
   text-align: center;
 }
-
 
 .p-merit__contents{
   width: 100%;
   margin: 0 auto;
-  padding: 58px 8vw;
-  @include media-query('l') {
-    min-width:  1210px;
-    .p-merit__contents__box__description{
-      min-width: 590px;
-      display: inline-block;
-    }
-    .p-merit__img{
-      width:45%;
-      display: inline-block;
-      position: relative;
-      top:-100px;
-    }
-  }
-  @include media-query('m') {
-    width: 100%;
+  padding: 58px 12vw 0px 12vw;
     .p-merit__contents__box__description{
       width: 50%;
       display: inline-block;
+      margin-bottom: 150px;
+    }
+    .p-merit__contents__box__description:nth-child(4){
+      margin-bottom: 90px;
+    }
+    .p-merit__contents__box__description:nth-child(5){
+      margin-bottom: 125px;
     }
     .p-merit__img{
-      width:40%;
+      width:36%;
       display: inline-block;
+      position: relative;
+      img{
+        width:100%;
+        position: absolute;
+        top:-260px;
+        left: -20px;
+
+      }
     }
-  }
+    .p-merit__img:nth-child(3){
+      margin-left: 150px;
+      img{
+        position: absolute;
+        top:-320px;
+        left: -20px;
+      }
+    }
+
+    .p-merit__contents__box__description{
+      text-align: left;
+      position: relative;
+      span{
+        position: absolute;
+        top:-10px;
+        left: 45px;
+      }
+      padding: 105px 50px 0px 130px;
+      @include media-query('s') {
+       padding: 50px 10px 0px 50px;
+      }
+    }
+
+
   @include media-query('s') {
     margin-top: 40px;
     width: 90%;
@@ -68,20 +90,4 @@
   }
 
 
-}
-
-
-.p-merit__contents__box__description{
-  text-align: left;
-  position: relative;
-  span{
-    position: absolute;
-    top:-10px;
-    left:70px;
-  }
-  padding: 95px 0px 0px 160px;
-
-  @include media-query('s') {
-   padding: 50px 10px 0px 50px;
-  }
 }

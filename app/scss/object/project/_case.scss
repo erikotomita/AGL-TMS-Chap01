@@ -7,7 +7,7 @@
 .p-case{
   width: 100%;
   margin: 0 auto;
-  padding: 88px 24px 69px 24px;
+  padding: 76px 24px 69px 24px;
   text-align: center;
 }
 
@@ -27,6 +27,7 @@ $elements: 3;
 .p-case__contents{
   width: 100%;
   margin-top:45px;
+  padding: 0 155px;
   @include media-query('s') {
     width:  100%;
   }
@@ -37,7 +38,7 @@ $elements: 3;
   vertical-align:middle;
   background-repeat: no-repeat;
   background-size: 48%;
-  width: 29%;
+  width: 30%;
   height: 306px;
   text-align: left;
   position: relative;

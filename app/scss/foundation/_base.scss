@@ -33,7 +33,7 @@ $robot_font:'Roboto';
 $breakpoints: (
   's': 'screen and (max-width: 576px) and (orientation: portrait)',
   /*'s' : 'screen and (max-width: 680px) ,screen and (max-width: 737px) and (orientation: landscape)',*/
-  'm': 'screen and(min-width: 577px)',
+  'm': 'screen and (min-width: 577px)',
   'l': 'screen and (min-width: 993px)',
   /*'nav': 'screen and (max-width: 680px) ,screen and (max-width: 737px) and (orientation: landscape)'*/
 ) !default;
