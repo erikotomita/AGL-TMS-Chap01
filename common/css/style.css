@@ -848,29 +848,29 @@ html {
 
 .p-case__contents__3col:nth-child(1) {
   background-image: url("../img/SVG/_01.svg");
-  background-position: top left 45px;
+  background-position: top left 30px;
 }
 
 .p-case__contents__3col:nth-child(2) {
   background-image: url("../img/SVG/_02.svg");
-  background-position: top left 45px;
+  background-position: top left 30px;
 }
 
 .p-case__contents__3col:nth-child(3) {
   background-image: url("../img/SVG/_03.svg");
-  background-position: top left 45px;
+  background-position: top left 30px;
 }
 
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .p-case__contents__3col:nth-child(2) {
-    background-position: top right;
+    background-position: top left 30px;
   }
 }
 
 .p-case__contents {
   width: 100%;
   margin-top: 45px;
-  padding: 0 155px;
+  padding: 0 35px;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .p-case__contents {
@@ -923,42 +923,26 @@ html {
 .p-merit__contents {
   width: 100%;
   margin: 0 auto;
-  padding: 58px 12vw 0px 12vw;
+  margin-top: 55px;
+}
+.p-merit__contents .p-merit__contents__block {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 120px;
+}
+.p-merit__contents .p-merit__contents__block:nth-child(2) {
+  padding-bottom: 90px;
 }
 .p-merit__contents .p-merit__contents__box__description {
-  width: 50%;
+  width: 55%;
   display: inline-block;
-  margin-bottom: 150px;
-}
-.p-merit__contents .p-merit__contents__box__description:nth-child(4) {
-  margin-bottom: 90px;
-}
-.p-merit__contents .p-merit__contents__box__description:nth-child(5) {
-  margin-bottom: 125px;
-}
-.p-merit__contents .p-merit__img {
-  width: 36%;
-  display: inline-block;
-  position: relative;
-}
-.p-merit__contents .p-merit__img img {
-  width: 100%;
-  position: absolute;
-  top: -260px;
-  left: -20px;
-}
-.p-merit__contents .p-merit__img:nth-child(3) {
-  margin-left: 150px;
-}
-.p-merit__contents .p-merit__img:nth-child(3) img {
-  position: absolute;
-  top: -320px;
-  left: -20px;
-}
-.p-merit__contents .p-merit__contents__box__description {
   text-align: left;
   position: relative;
-  padding: 105px 50px 0px 130px;
+  padding: 105px 70px 0px 130px;
+  height: 100%;
 }
 .p-merit__contents .p-merit__contents__box__description span {
   position: absolute;
@@ -969,6 +953,39 @@ html {
   .p-merit__contents .p-merit__contents__box__description {
     padding: 50px 10px 0px 50px;
   }
+}
+.p-merit__contents .p-merit__contents__box__description:nth-child(4) {
+  margin-bottom: 90px;
+}
+.p-merit__contents .p-merit__contents__box__description:nth-child(5) {
+  margin-bottom: 125px;
+}
+.p-merit__contents .p-merit__img {
+  width: 45%;
+  display: inline-block;
+  position: relative;
+}
+.p-merit__contents .p-merit__img img {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  width: 90%;
+}
+.p-merit__contents .p-merit__contents__block:nth-child(2) .p-merit__img {
+  width: 45%;
+  display: inline-block;
+  position: relative;
+}
+.p-merit__contents .p-merit__contents__block:nth-child(2) .p-merit__img img {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  width: 90%;
+}
+.p-merit__contents .p-merit__contents__block:nth-child(2) .p-merit__contents__box__description {
+  margin-left: 50px;
+  padding-right: 0px;
+  width: 50%;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .p-merit__contents {
@@ -995,26 +1012,6 @@ html {
         -ms-flex-order: 2;
             order: 2;
   }
-  .p-merit__contents .order3 {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-  }
-  .p-merit__contents .order4 {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
-  }
-  .p-merit__contents .order5 {
-    -webkit-box-ordinal-group: 6;
-        -ms-flex-order: 5;
-            order: 5;
-  }
-  .p-merit__contents .order6 {
-    -webkit-box-ordinal-group: 7;
-        -ms-flex-order: 6;
-            order: 6;
-  }
 }
 
 /*
@@ -1023,7 +1020,7 @@ html {
 ========================================================
 */
 .p-recommend {
-  margin: 100px 4vw 0px 4vw;
+  margin: 120px 0vw 0px 0vw;
   background-color: #ededed;
   position: relative;
 }
@@ -1039,8 +1036,8 @@ html {
     content: url("../img/1x/imgPoint.png");
     display: block;
     position: absolute;
-    top: -150px;
-    left: calc(0px + 12%);
+    top: -160px;
+    left: calc(0px + 9%);
     height: 302px;
   }
 }
@@ -1063,7 +1060,7 @@ html {
 }
 .p-recommend__contents {
   width: 100%;
-  padding: 165px 70px 70px 70px;
+  padding: 155px 20px 70px 20px;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .p-recommend__contents {
@@ -1074,8 +1071,8 @@ html {
 .p-recommend__4col {
   display: inline-block;
   float: left;
-  width: calc(25% - 20px);
-  margin: 0px 10px 0px 10px;
+  width: calc(25% - 35px);
+  margin: 0px 13px 0px 13px;
   background-color: #fff;
   padding: 20px;
   height: 530px;
@@ -1094,9 +1091,9 @@ html {
 ========================================================
 */
 .p-present {
-  width: 1120px;
+  width: 1220px;
   margin: 120px auto;
-  padding: 69px 0px 69px 0px;
+  padding: 80px 0px 50px 0px;
   text-align: center;
   background-color: #565f64;
   position: relative;
@@ -1121,8 +1118,8 @@ html {
   /*画像の高さ*/
   height: 45%;
   /*画像の高さ*/
-  right: -270px;
-  top: -50px;
+  top: 10px;
+  right: -220px;
   z-index: -1;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
@@ -1168,7 +1165,7 @@ html {
 
 .p-design__contents {
   width: 1120px;
-  margin: 120px auto;
+  margin: 80px 80px 80px 230px;
   position: relative;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
@@ -1190,7 +1187,7 @@ html {
   float: right;
   position: absolute;
   top: 30%;
-  right: -5%;
+  right: 0;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .p-design__contents__right {
@@ -1642,8 +1639,8 @@ html {
 .c-heading.is-recommend {
   font-size: 34px;
   position: absolute;
-  top: 8%;
-  right: 70px;
+  top: 5%;
+  right: 40px;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .c-heading.is-recommend {
@@ -1652,6 +1649,7 @@ html {
   }
 }
 .c-heading.is-recommend strong {
+  font-family: "小塚明朝 Pro", "Kozuka Mincyo Pro", serif;
   color: #252a6d;
   font-size: 46px;
 }
@@ -1664,8 +1662,8 @@ html {
 .c-heading__sub.is-recommend {
   font-size: 88px;
   position: absolute;
-  top: -10%;
-  right: 70px;
+  top: -11%;
+  right: 40px;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .c-heading__sub.is-recommend {
@@ -1689,10 +1687,10 @@ html {
   font-size: 36px;
   color: #fff;
   display: inline-block;
-  padding: 10px 0px 10px 0px;
+  padding: 10px 0px 20px 0px;
   border-bottom: solid 1px #fff;
   border-top: solid 1px #fff;
-  margin: 20px auto;
+  margin: 30px auto;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .c-heading.is-present {
@@ -1915,14 +1913,14 @@ html {
 
 .c-mainV__inner {
   width: 100vw;
-  height: 92vh;
+  height: 115vh;
   background-image: url("../img/1x/mainvisual-100.jpg");
   /* 画像を常に天地左右の中央に配置 */
   background-position: center center;
   /* 画像をタイル状に繰り返し表示しない */
   background-repeat: no-repeat;
-  /* コンテンツの高さが画像の高さより大きい時、動かないように固定
-  background-attachment: fixed;*/
+  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+  background-attachment: fixed;
   /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
   background-size: cover;
   position: relative;
@@ -1930,14 +1928,14 @@ html {
 }
 
 .c-mainV__contents {
+  width: 434px;
+  height: 461px;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   margin: auto;
-  width: 434px;
-  height: 461px;
   background-color: #fff;
   background-color: rgba(255, 255, 255, 0.5);
   text-align: center;
@@ -2061,8 +2059,8 @@ html {
   color: #c7c7c7;
   position: absolute;
   letter-spacing: 0.3em;
-  top: 94px;
-  left: 114px;
+  top: 95px;
+  left: 110px;
 }
 
 @media screen and (max-width: 576px) and (orientation: portrait) {
@@ -2117,7 +2115,7 @@ html {
   border-radius: 18px;
   background-color: #fff;
   font-size: 19px;
-  padding: 3px 15px 3px 15px;
+  padding: 3px 50px 3px 50px;
 }
 
 /*
@@ -2126,7 +2124,7 @@ html {
 ========================================================
 */
 .slider {
-  width: 80vw;
+  width: 77.5vw;
   position: relative;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
@@ -2136,8 +2134,8 @@ html {
 }
 
 .slider img {
-  height: auto;
-  width: 100%;
+  height: 683px;
+  width: 1444px;
 }
 
 .btnStyle, .next-arrow, .prev-arrow {
@@ -2242,7 +2240,8 @@ button {
 
 /*recommend*/
 .c-text__summary.is-recommend {
-  font-size: 20px;
+  font-size: 22px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {

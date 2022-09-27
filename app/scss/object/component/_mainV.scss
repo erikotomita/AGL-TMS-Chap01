@@ -8,7 +8,7 @@
 }
 .c-mainV__inner{
     width:100vw;
-  height:92vh;
+  height:115vh;
   background-image: url("../img/1x/mainvisual-100.jpg");
 
     /* 画像を常に天地左右の中央に配置 */
@@ -17,8 +17,8 @@
   /* 画像をタイル状に繰り返し表示しない */
   background-repeat: no-repeat;
 
-  /* コンテンツの高さが画像の高さより大きい時、動かないように固定
-  background-attachment: fixed;*/
+  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+  background-attachment: fixed;
 
   /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
   background-size: cover;
@@ -28,14 +28,14 @@
 }
 
 .c-mainV__contents{
+  width:434px;
+  height:461px;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   margin: auto;
-  width:434px;
-  height:461px;
   background-color: #fff;
   background-color:rgba(255,255,255,0.5);
   text-align: center;

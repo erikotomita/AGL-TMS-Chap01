@@ -15,19 +15,19 @@ $elements: 3;
 @for $i from 0 to $elements {
   .p-case__contents__3col:nth-child(#{$i + 1}) {
     background-image: url("../img/SVG/_0"+#{$i + 1}+".svg");
-    background-position: top left 45px;
+    background-position: top left 30px;
   }
 }
 .p-case__contents__3col:nth-child(2) {
     @include media-query('s') {
-      background-position: top right;
+      background-position:  top left 30px;
     }
 }
 
 .p-case__contents{
   width: 100%;
   margin-top:45px;
-  padding: 0 155px;
+  padding: 0 35px;
   @include media-query('s') {
     width:  100%;
   }

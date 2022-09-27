@@ -25,7 +25,7 @@
 
 .p-design__contents{
   width: 1120px;
-  margin: 120px auto;
+  margin: 80px 80px 80px 230px;
   position: relative;
   @include media-query('s') {
     width:  90%;
@@ -42,7 +42,7 @@
   float: right;
   position: absolute;
   top:30%;
-  right:-5%;
+  right:0;
   @include media-query('s') {
   position: relative;
   float: none;

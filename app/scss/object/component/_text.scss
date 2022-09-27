@@ -41,7 +41,8 @@
 }
 /*recommend*/
 .c-text__summary.is-recommend{
-   font-size: 20px;
+   font-size: 22px;
+   margin-top: 20px;
    margin-bottom: 10px;
    @include media-query('s') {
       font-size: 18px;

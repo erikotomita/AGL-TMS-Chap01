@@ -6,9 +6,9 @@
 
 
 .p-present{
-  width: 1120px;
+  width: 1220px;
   margin: 120px auto;
-  padding: 69px 0px 69px 0px;
+  padding: 80px 0px 50px 0px;
   text-align: center;
   background-color: $darkgray_color;
   @include media-query('s') {
@@ -27,8 +27,8 @@
   position: absolute;
   width: 45%;/*画像の高さ*/
   height: 45%;/*画像の高さ*/
-  right:-270px;
-  top:-50px;
+  top:10px;
+  right:-220px;
   @include media-query('s') {
       width: 35%;/*画像の高さ*/
       height: 35%;/*画像の高さ*/

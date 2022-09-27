@@ -42,13 +42,14 @@
 .c-heading.is-recommend{
   font-size: 34px;
   position: absolute;
-  top:8%;
-  right:70px;
+  top:5%;
+  right:40px;
   @include media-query('s') {
    font-size: 20px;
    top:2%;
   }
   strong{
+    font-family:  $kozukaMincyo_font;
     color:$blue_color;
     font-size: 46px;
     @include media-query('s') {
@@ -60,8 +61,8 @@
 .c-heading__sub.is-recommend{
   font-size: 88px;
   position: absolute;
-  top:-10%;
-  right:70px;
+  top:-11%;
+  right:40px;
   @include media-query('s') {
    font-size: 46px;
    top:-3%;
@@ -80,10 +81,10 @@
   font-size: 36px;
   color:#fff;
   display: inline-block;
-  padding: 10px 0px 10px 0px;
+  padding: 10px 0px 20px 0px;
   border-bottom: solid 1px #fff;
   border-top: solid 1px #fff;
-  margin:20px auto;
+  margin:30px auto;
   @include media-query('s') {
    font-size: 19px;
   }

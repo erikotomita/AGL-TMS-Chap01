@@ -13,11 +13,33 @@
 .p-merit__contents{
   width: 100%;
   margin: 0 auto;
-  padding: 58px 12vw 0px 12vw;
-    .p-merit__contents__box__description{
-      width: 50%;
+  margin-top: 55px;
+  .p-merit__contents__block{
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    padding-bottom: 120px;
+  }
+  .p-merit__contents__block:nth-child(2){
+      padding-bottom: 90px;
+  }
+
+
+  .p-merit__contents__box__description{
+      width: 55%;
       display: inline-block;
-      margin-bottom: 150px;
+      text-align: left;
+      position: relative;
+      padding: 105px 70px 0px 130px;
+      height:100%;
+      span{
+        position: absolute;
+        top:-10px;
+        left: 45px;
+      }
+      @include media-query('s') {
+       padding: 50px 10px 0px 50px;
+      }
     }
     .p-merit__contents__box__description:nth-child(4){
       margin-bottom: 90px;
@@ -26,38 +48,34 @@
       margin-bottom: 125px;
     }
     .p-merit__img{
-      width:36%;
+      width:45%;
       display: inline-block;
       position: relative;
       img{
-        width:100%;
         position: absolute;
-        top:-260px;
-        left: -20px;
-
-      }
-    }
-    .p-merit__img:nth-child(3){
-      margin-left: 150px;
-      img{
-        position: absolute;
-        top:-320px;
-        left: -20px;
+        top:20px;
+        left: 0px;
+        width:90%;
       }
     }
 
-    .p-merit__contents__box__description{
-      text-align: left;
-      position: relative;
-      span{
-        position: absolute;
-        top:-10px;
-        left: 45px;
-      }
-      padding: 105px 50px 0px 130px;
-      @include media-query('s') {
-       padding: 50px 10px 0px 50px;
-      }
+    .p-merit__contents__block:nth-child(2){
+        .p-merit__img{
+          width:45%;
+          display: inline-block;
+          position: relative;
+          img{
+            position: absolute;
+            top:20px;
+            left: 50px;
+            width:90%;
+          }
+        }
+        .p-merit__contents__box__description{
+          margin-left: 50px;
+          padding-right:0px; 
+          width:50%;
+        }
     }
 
 
@@ -74,18 +92,6 @@
       }
       .order2 {
         order: 2;
-      }
-      .order3 {
-        order: 3;
-      }
-      .order4 {
-        order: 4;
-      }
-      .order5 {
-        order: 5;
-      }
-      .order6 {
-        order: 6;
       }
   }
 
