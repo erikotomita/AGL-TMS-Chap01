@@ -5,11 +5,14 @@
 */
 
 .p-plan{
-  width: 1195px;
-  margin: 330px auto 130px auto;
+  width: 100%;
+  margin: 260px auto 85px auto;
   text-align: center;
+  .c-plan__img{
+    margin: 100px 60px 0px 0px;
+  }
   p{
-    margin: 62px auto 130px auto;
+    margin: 62px auto 110px auto;
   }
 
   @include media-query('s') {

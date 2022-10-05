@@ -8,8 +8,9 @@
   display: inline-block;
 
   dl{
-     width:80%;
-     padding: 1em 0px 1em 0em;
+     width:73%;
+    font-size: 24px;
+     padding: 0.7em 0px 0.7em 0em;
      border-bottom: solid 1px #cbcbcb;
      display: inline-block;
      @include media-query('s') {
@@ -33,9 +34,10 @@
           @include media-query('s') {
             width: 65%;
             text-align: left;
-            font-size: 14px;
+
           }
           .is-tag{
+            font-size: 20px;
               display: inline-block;
               border-radius: 5px;
               background-color: #fff;
@@ -59,8 +61,9 @@
 /*finance*/
 .c-list.is-finance{
   dl{
-     width:80%;
-     padding: 1em 0px 1em 0em;
+    font-size: 22px;
+     width:70%;
+     padding: 0.5em 0px 0.5em 0em;
      display: inline-block;
       dt {
     	    /*左に寄せる*/
@@ -69,7 +72,7 @@
     	    /*後続の左寄せを解除*/
     	    clear: left ;
     	    margin-right: 0.5em ;
-    	    width: 30%;
+    	    width: 35%;
           position: relative;
           @include media-query('s') {
             width: 32%;
@@ -92,7 +95,7 @@
       font-size: 18px;
       letter-spacing: 0.08em;
       top: 0%;
-      left:75px;
+      left:65px;
     }
   }
   dl:nth-child(2){

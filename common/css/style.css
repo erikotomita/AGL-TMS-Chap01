@@ -1176,6 +1176,8 @@ html {
 
 .p-design__contents__left {
   float: left;
+  display: inline-block;
+  width: 68%;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .p-design__contents__left {
@@ -1185,9 +1187,9 @@ html {
 
 .p-design__contents__right {
   float: right;
+  display: inline-block;
   position: absolute;
   top: 30%;
-  right: 0;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .p-design__contents__right {
@@ -1204,12 +1206,15 @@ html {
 ========================================================
 */
 .p-plan {
-  width: 1195px;
-  margin: 330px auto 130px auto;
+  width: 100%;
+  margin: 260px auto 85px auto;
   text-align: center;
 }
+.p-plan .c-plan__img {
+  margin: 100px 60px 0px 0px;
+}
 .p-plan p {
-  margin: 62px auto 130px auto;
+  margin: 62px auto 110px auto;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .p-plan {
@@ -1246,8 +1251,9 @@ html {
 .p-finance__2col {
   background-color: #fff;
   display: inline-block;
-  width: 40%;
+  width: 35%;
   height: 400px;
+  margin: auto 25px auto 25px;
   vertical-align: bottom;
   position: relative;
 }
@@ -1289,8 +1295,8 @@ html {
   /*画像の高さ*/
   height: 100%;
   /*画像の高さ*/
-  right: -320px;
-  top: -150px;
+  right: -300px;
+  top: -120px;
 }
 
 /*
@@ -1746,11 +1752,11 @@ html {
   }
 }
 
-.c-heading.is-plan:before {
+.c-heading.is-plan:after {
   content: "";
   position: absolute;
   left: 25%;
-  top: 0;
+  bottom: 10;
   /*線の上下位置*/
   display: inline-block;
   width: 50%;
@@ -1763,7 +1769,7 @@ html {
   /*線の丸み*/
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
-  .c-heading.is-plan:before {
+  .c-heading.is-plan:after {
     left: 25%;
     top: 80px;
     /*線の上下位置*/
@@ -1774,7 +1780,7 @@ html {
 .c-heading.is-finance {
   font-size: 47px;
   display: inline-block;
-  padding-bottom: 20px;
+  padding-bottom: 85px;
   position: relative;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
@@ -1821,11 +1827,11 @@ html {
 .c-heading__sub.is-finance {
   font-size: 30px;
   display: inline-block;
-  padding: 10px;
+  padding: 10px 60px;
   background-color: #000000;
   color: #fff;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 45px;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .c-heading__sub.is-finance {
@@ -2219,7 +2225,7 @@ button {
   width: 41px;
   height: 34px;
   position: absolute;
-  top: calc(0% + 68px);
+  top: calc(0% + 94px);
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
   .c-text__summary.is-merit:after {
@@ -2370,8 +2376,9 @@ button {
   display: inline-block;
 }
 .c-list.is-plan dl {
-  width: 80%;
-  padding: 1em 0px 1em 0em;
+  width: 73%;
+  font-size: 24px;
+  padding: 0.7em 0px 0.7em 0em;
   border-bottom: solid 1px #cbcbcb;
   display: inline-block;
 }
@@ -2402,10 +2409,10 @@ button {
   .c-list.is-plan dl dd {
     width: 65%;
     text-align: left;
-    font-size: 14px;
   }
 }
 .c-list.is-plan dl dd .is-tag {
+  font-size: 20px;
   display: inline-block;
   border-radius: 5px;
   background-color: #fff;
@@ -2427,8 +2434,9 @@ button {
 
 /*finance*/
 .c-list.is-finance dl {
-  width: 80%;
-  padding: 1em 0px 1em 0em;
+  font-size: 22px;
+  width: 70%;
+  padding: 0.5em 0px 0.5em 0em;
   display: inline-block;
 }
 .c-list.is-finance dl dt {
@@ -2438,7 +2446,7 @@ button {
   /*後続の左寄せを解除*/
   clear: left;
   margin-right: 0.5em;
-  width: 30%;
+  width: 35%;
   position: relative;
 }
 @media screen and (max-width: 576px) and (orientation: portrait) {
@@ -2459,7 +2467,7 @@ button {
   font-size: 18px;
   letter-spacing: 0.08em;
   top: 0%;
-  left: 75px;
+  left: 65px;
 }
 .c-list.is-finance dl:nth-child(2) dt:after {
   /*border-bottom: 3px dotted $primary;*/

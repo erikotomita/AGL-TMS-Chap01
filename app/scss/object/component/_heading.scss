@@ -129,11 +129,11 @@
    font-size: 40px;
   }
 }
-.c-heading.is-plan:before{
+.c-heading.is-plan:after{
   content: '';
   position: absolute;
   left: 25%;
-  top: 0;/*線の上下位置*/
+  bottom: 10;/*線の上下位置*/
   display: inline-block;
   width: 50%;/*線の長さ*/
   height: 1px;/*線の太さ*/
@@ -149,7 +149,7 @@
 .c-heading.is-finance{
   font-size: 47px;
   display:inline-block;
-  padding-bottom: 20px;
+  padding-bottom: 85px;
   position: relative;
   @include media-query('s') {
    font-size: 40px;
@@ -182,11 +182,11 @@
 .c-heading__sub.is-finance{
   font-size: 30px;
   display:inline-block;
-  padding: 10px;
+  padding: 10px 60px;
   background-color: $primary;
   color:#fff;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 45px;
   @include media-query('s') {
     margin: 40px auto 20px auto;
    font-size: 24px;

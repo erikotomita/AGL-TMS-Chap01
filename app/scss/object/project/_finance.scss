@@ -18,8 +18,9 @@
 .p-finance__2col{
   background-color:#fff;
   display: inline-block;
-  width: 40%;
+  width: 35%;
   height: 400px;
+  margin: auto 25px auto 25px;
   vertical-align: bottom;
   position: relative;
   @include media-query('s') {
@@ -28,6 +29,7 @@
   }
 }
 .p-finance__2col__right{
+
   position: absolute;
   top: 20%;
 }
@@ -53,6 +55,6 @@
   position: absolute;
   width: 100%;/*画像の高さ*/
   height: 100%;/*画像の高さ*/
-  right:-320px;
-  top:-150px;
+  right:-300px;
+  top:-120px;
 }
